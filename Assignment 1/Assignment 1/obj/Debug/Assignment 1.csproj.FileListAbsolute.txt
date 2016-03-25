@@ -1,0 +1,6 @@
+c:\users\sadain\documents\visual studio 2013\Projects\Assignment 1\Assignment 1\bin\Debug\Assignment 1.exe.config
+c:\users\sadain\documents\visual studio 2013\Projects\Assignment 1\Assignment 1\bin\Debug\Assignment 1.exe
+c:\users\sadain\documents\visual studio 2013\Projects\Assignment 1\Assignment 1\bin\Debug\Assignment 1.pdb
+c:\users\sadain\documents\visual studio 2013\Projects\Assignment 1\Assignment 1\obj\Debug\Assignment 1.csprojResolveAssemblyReference.cache
+c:\users\sadain\documents\visual studio 2013\Projects\Assignment 1\Assignment 1\obj\Debug\Assignment 1.exe
+c:\users\sadain\documents\visual studio 2013\Projects\Assignment 1\Assignment 1\obj\Debug\Assignment 1.pdb
