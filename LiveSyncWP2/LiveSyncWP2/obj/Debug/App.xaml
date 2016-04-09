@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="LiveSyncWP2.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LiveSyncWP2"
+    xmlns:localData="using:LiveSyncWP2.Data">
+
+    <Application.Resources>
+
+        <!-- Application-specific resources -->
+        <x:String x:Key="AppName">LiveSyncWP2</x:String>
+    </Application.Resources>
+</Application>
+

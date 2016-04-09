@@ -1,0 +1,43 @@
+﻿<Window x:Class="LiveSync1.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sign In" Height="300" Width="300"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        ShowInTaskbar="False"
+        Background="WhiteSmoke"
+        SizeToContent="WidthAndHeight"
+        WindowStyle="None"
+        FocusManager.FocusedElement="{Binding ElementName=txtUserName}">
+    <Window.Resources>
+        <DropShadowEffect x:Key="ShadowWindow"
+                          Color="Black"
+                          Opacity=".75"
+                          ShadowDepth="12"/>
+
+    </Window.Resources>
+    <Grid>
+        <Label Content="Sign In to" HorizontalAlignment="Left" Height="32" Margin="60,19,0,0" VerticalAlignment="Top" Width="107" FontSize="14" FontFamily="Vani"/>
+        <Label Content="Outlook Live Sync" HorizontalAlignment="Left" Height="46" Margin="60,38,0,0" VerticalAlignment="Top" Width="185" FontSize="18" FontFamily="Vani" FontWeight="Bold"/>
+        <Image   HorizontalAlignment="Left" Height="100" Margin="10,89,0,0" VerticalAlignment="Top" Width="100" OpacityMask="#FF423333">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Label Content="UserName" HorizontalAlignment="Left" Margin="110,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.508,0.923" Height="32" FontFamily="Vani"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="110,138,0,0" VerticalAlignment="Top" FontFamily="Vani"/>
+        <TextBox   TabIndex="0" FontFamily="vani" Cursor="IBeam" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged" HorizontalAlignment="Left"  AcceptsReturn="False" AcceptsTab="False" InputMethod.IsInputMethodEnabled="True" Background="Transparent" Height="20" Margin="174,106,0,0"  VerticalAlignment="Top" Width="120
+                 "  Uid="usertxt"/>
+        <PasswordBox  HorizontalAlignment="Left" Background="Transparent"   InputMethod.IsInputMethodEnabled="True" Margin="174,138,0,0" VerticalAlignment="Top" Width="120
+                     " RenderTransformOrigin="0.5,0.5" Height="20">
+
+        </PasswordBox>
+        <Button Content="Sign In" HorizontalAlignment="Left" Margin="130,174,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="219,174,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Don't have an outlook account?" HorizontalAlignment="Left" Margin="49,220,0,0" VerticalAlignment="Top" Width="177" RenderTransformOrigin="0.5,0.5" FontFamily="Vani">
+
+        </Label>
+        <Button Content="Sign Up" TextElement.Foreground="Blue" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="226,221,0,0" VerticalAlignment="Top" Width="46" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

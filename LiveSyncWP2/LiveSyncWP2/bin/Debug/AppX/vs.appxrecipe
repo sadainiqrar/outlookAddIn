@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SADAIN</Machine>
+    <WindowsUser>sadain Iqrar</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>b715f2b1-9dbf-4cd1-afe7-9656a1dc5208</PackageIdentityName>
+    <RegisteredManifestChecksum>46813CBDC41F1315CB1CE3B01C76F3AAABC0922D3B22E51B4398525553A59883</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>b715f2b1-9dbf-4cd1-afe7-9656a1dc5208_1.0.0.0_neutral__vfgwymqnw3x28</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>b715f2b1-9dbf-4cd1-afe7-9656a1dc5208_vfgwymqnw3x28!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>b715f2b1-9dbf-4cd1-afe7-9656a1dc5208</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=sadain Iqrar</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-04-09T02:29:26.288</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.exe">
+      <PackagePath>LiveSyncWP2.exe</PackagePath>
+      <Modified>2016-04-09T02:29:25.163</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+      <Modified>2016-04-09T02:29:15.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2016-04-09T02:29:24.695</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\ItemsPage.xbf">
+      <PackagePath>ItemsPage.xbf</PackagePath>
+      <Modified>2016-04-09T02:29:24.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\SplitPage.xbf">
+      <PackagePath>SplitPage.xbf</PackagePath>
+      <Modified>2016-04-09T02:29:24.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-04-09T02:29:25.726</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
