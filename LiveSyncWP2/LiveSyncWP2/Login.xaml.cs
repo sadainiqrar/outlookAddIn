@@ -24,7 +24,6 @@ namespace LiveSyncWP2
     {
         public Login()
         {
-            this.InitializeComponent();
         }
     }
 }

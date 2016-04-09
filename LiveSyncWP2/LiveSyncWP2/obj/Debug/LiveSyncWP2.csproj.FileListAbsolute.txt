@@ -36,3 +36,44 @@ c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSync
 c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\obj\Debug\ProjectArchitectures.txt
 c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\obj\Debug\Login.g.i.cs
 c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\obj\Debug\Login.g.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\App.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\ItemsPage.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\Login.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\SplitPage.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.exe
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.pdb
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\resources.pri
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\AppxManifest.xml
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.build.appxrecipe
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\App.g.i.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\App.g.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\ItemsPage.g.i.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\ItemsPage.g.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\Login.g.i.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\Login.g.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\SplitPage.g.i.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\SplitPage.g.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\XamlTypeInfo.g.cs
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\App.xaml
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\ItemsPage.xaml
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\App.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\ItemsPage.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\XamlSaveStateFile.xml
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\Login.xaml
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\SplitPage.xaml
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\Login.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\SplitPage.xbf
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\LiveSyncWP2.exe
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\LiveSyncWP2.pdb
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\priconfig.xml
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\priconfig.xml.intermediate
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\layout.resfiles
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\layout.resfiles.intermediate
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\resources.resfiles
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\resources.resfiles.intermediate
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\pri.resfiles
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\pri.resfiles.intermediate
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\qualifiers.txt
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\qualifiers.txt.intermediate
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\obj\Debug\ProjectArchitectures.txt

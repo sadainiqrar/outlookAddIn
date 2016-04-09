@@ -8,53 +8,56 @@
     <PackageIdentityName>b715f2b1-9dbf-4cd1-afe7-9656a1dc5208</PackageIdentityName>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.exe">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.exe">
       <PackagePath>LiveSyncWP2.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\DataModel\SampleData.json">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\LightGray.png">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\LightGray.png">
       <PackagePath>Assets\LightGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\MediumGray.png">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\MediumGray.png">
       <PackagePath>Assets\MediumGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\Assets\DarkGray.png">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\DarkGray.png">
       <PackagePath>Assets\DarkGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\ItemsPage.xbf">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\ItemsPage.xbf">
       <PackagePath>ItemsPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\SplitPage.xbf">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\Login.xbf">
+      <PackagePath>Login.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\SplitPage.xbf">
       <PackagePath>SplitPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

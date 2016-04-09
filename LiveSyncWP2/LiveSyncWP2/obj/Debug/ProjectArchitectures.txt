@@ -1,1 +1,1 @@
-c:\users\sadain iqrar\documents\visual studio 2013\Projects\LiveSyncWP2\LiveSyncWP2\LiveSyncWP2.csproj;neutral
+E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\LiveSyncWP2.csproj;neutral

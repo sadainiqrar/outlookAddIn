@@ -157,7 +157,7 @@
                     </ListView>
 
                 </StackPanel>
-                <Button Content="Download"  BorderBrush="White" Grid.Column="1" HorizontalAlignment="Left" Margin="450,20,20,0" Grid.Row="2" VerticalAlignment="Top" Height="50" Width="113"/>
+                <Button Content="Download"  BorderBrush="White" Grid.Column="1" HorizontalAlignment="Left" Margin="0,20,20,0" Grid.Row="2" VerticalAlignment="Top" Height="50" Width="113"/>
             </Grid>
         </ScrollViewer>
         <Button Content="Donwload All" HorizontalAlignment="Left" Margin="156,526,0,0" Grid.Row="1"  BorderBrush="White" VerticalAlignment="Top" Height="50" Width="122" Click="Button_Click"/>

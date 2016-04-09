@@ -31,7 +31,7 @@
         <PasswordBox  HorizontalAlignment="Left" Background="Transparent"  Margin="738,369,0,0" VerticalAlignment="Top" Width="345" RenderTransformOrigin="0.5,0.5" Height="50" BorderBrush="#FF080707">
 
         </PasswordBox>
-        <Button Content="Sign In" HorizontalAlignment="Left" Margin="611,471,0,0" VerticalAlignment="Top" Width="192"  Height="65" FontSize="36" Foreground="#FF171616" BorderBrush="#FF0E0D0D" Click="Button_Click"/>
+        <Button Content="Sign In" HorizontalAlignment="Left" Margin="611,471,0,0" VerticalAlignment="Top" Width="192"  Height="65" FontSize="36" Foreground="#FF171616" BorderBrush="#FF0E0D0D"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="891,471,0,0" VerticalAlignment="Top" Width="192" Height="65" Foreground="#FF0C0000" FontSize="36" BorderBrush="#FF0A0909"/>
         <TextBlock Text="Don't have an outlook account?" HorizontalAlignment="Left" Margin="425,604,0,0" VerticalAlignment="Top" Width="504" RenderTransformOrigin="0.0,0.0" FontFamily="Vani" FontSize="36" Foreground="#FF0F0F0F">
 
