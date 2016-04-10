@@ -1,1 +1,1 @@
-E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\LiveSyncWP2.csproj;neutral
+D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\LiveSyncWP2.csproj;neutral

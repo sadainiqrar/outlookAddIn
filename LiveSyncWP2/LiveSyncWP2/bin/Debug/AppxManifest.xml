@@ -22,8 +22,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="LiveSyncWP2.exe" EntryPoint="LiveSyncWP2.App">
-      <m2:VisualElements DisplayName="LiveSyncWP2" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="LiveSyncWP2" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="LiveSyncWP2" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="LiveSyncWP2" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:ApplicationView MinWidth="default" />
       </m2:VisualElements>
     </Application>
   </Applications>
