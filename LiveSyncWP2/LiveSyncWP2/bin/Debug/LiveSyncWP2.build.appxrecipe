@@ -1,63 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SADAIN</Machine>
-    <WindowsUser>sadain Iqrar</WindowsUser>
+    <Machine>SADAIN-IQRAR</Machine>
+    <WindowsUser>SADAIN</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>b715f2b1-9dbf-4cd1-afe7-9656a1dc5208</PackageIdentityName>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.exe">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\LiveSyncWP2.exe">
       <PackagePath>LiveSyncWP2.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\DataModel\SampleData.json">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\packages\Microsoft.Bcl.Async.1.0.16\lib\win8\Microsoft.Threading.Tasks.dll">
+      <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\packages\Microsoft.Bcl.Async.1.0.16\lib\win8\Microsoft.Threading.Tasks.Extensions.dll">
+      <PackagePath>Microsoft.Threading.Tasks.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\packages\WindowsAzure.MobileServices.1.0.2\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\packages\WindowsAzure.MobileServices.1.0.2\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\packages\Microsoft.Net.Http.2.2.15\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\packages\Microsoft.Net.Http.2.2.15\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\LightGray.png">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\LightGray.png">
       <PackagePath>Assets\LightGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\MediumGray.png">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\MediumGray.png">
       <PackagePath>Assets\MediumGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\DarkGray.png">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\Assets\DarkGray.png">
       <PackagePath>Assets\DarkGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\ItemsPage.xbf">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\ItemsPage.xbf">
       <PackagePath>ItemsPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\Login.xbf">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\SplitPage.xbf">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\SplitPage.xbf">
       <PackagePath>SplitPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\GitHub\visualprogramming\LiveSyncWP2\LiveSyncWP2\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
