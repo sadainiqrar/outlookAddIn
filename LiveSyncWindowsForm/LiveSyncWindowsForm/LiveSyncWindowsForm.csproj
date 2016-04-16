@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilesWindow.Designer.cs">
+      <DependentUpon>FilesWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,12 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyFiles.Designer.cs">
+      <DependentUpon>MyFiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="OneDriveTile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,11 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FilesWindow.resx">
+      <DependentUpon>FilesWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFiles.resx">
+      <DependentUpon>MyFiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OneDriveTile.resx">
       <DependentUpon>OneDriveTile.cs</DependentUpon>
