@@ -1,0 +1,18 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license at the bottom of this file. -->
+    
+    <Application
+    x:Class="Office365Plugin.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Office365Plugin"
+    RequestedTheme="Dark">
+    <Application.Resources>
+        <SolidColorBrush x:Key="SampleHeaderBrush" Color="#007ACC" />
+        <SolidColorBrush x:Key="HyperLinkBrush" Color="#FFECE4FF" />
+        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#1799F0" />
+        <x:String x:Key="ProgressBarIndeterminateForegroundThemeBrush">White</x:String>
+        <x:String x:Key="ida:ClientID">0b1904eb-438a-47a4-8422-2d29d2a2464d</x:String>
+        <x:String x:Key="ida:AADInstance">https://login.microsoftonline.com/</x:String>
+    </Application.Resources>
+</Application>
+
