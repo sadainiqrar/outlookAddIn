@@ -36,9 +36,9 @@
         {
             this.LiveSyncTab = this.Factory.CreateRibbonTab();
             this.LiveSyncG1 = this.Factory.CreateRibbonGroup();
+            this.SendEmail = this.Factory.CreateRibbonButton();
             this.DownloadBtn = this.Factory.CreateRibbonButton();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.BtnDownloadOneDrive = this.Factory.CreateRibbonButton();
             this.LiveSyncTab.SuspendLayout();
             this.LiveSyncG1.SuspendLayout();
             this.SuspendLayout();
@@ -51,22 +51,22 @@
             // 
             // LiveSyncG1
             // 
-            this.LiveSyncG1.Items.Add(this.BtnDownloadOneDrive);
+            this.LiveSyncG1.Items.Add(this.SendEmail);
             this.LiveSyncG1.Items.Add(this.DownloadBtn);
             this.LiveSyncG1.Label = "LiveSync";
             this.LiveSyncG1.Name = "LiveSyncG1";
+            // 
+            // SendEmail
+            // 
+            this.SendEmail.Label = "SendEmail";
+            this.SendEmail.Name = "SendEmail";
+            this.SendEmail.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.configBtn_Click);
             // 
             // DownloadBtn
             // 
             this.DownloadBtn.Label = "Download";
             this.DownloadBtn.Name = "DownloadBtn";
             this.DownloadBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.DownloadBtn_Click);
-            // 
-            // BtnDownloadOneDrive
-            // 
-            this.BtnDownloadOneDrive.Label = "DownloadOneDrive";
-            this.BtnDownloadOneDrive.Name = "BtnDownloadOneDrive";
-            this.BtnDownloadOneDrive.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.configBtn_Click);
             // 
             // LiveSyncRibbon
             // 
@@ -88,7 +88,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup LiveSyncG1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton DownloadBtn;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnDownloadOneDrive;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton SendEmail;
     }
 
     partial class ThisRibbonCollection

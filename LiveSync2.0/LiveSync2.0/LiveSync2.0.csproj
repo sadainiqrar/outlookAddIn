@@ -188,6 +188,12 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Email.Designer.cs">
+      <DependentUpon>Email.cs</DependentUpon>
+    </Compile>
     <Compile Include="LiveSyncRibbon.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="Email.resx">
+      <DependentUpon>Email.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LiveSyncRibbon.resx">
       <DependentUpon>LiveSyncRibbon.cs</DependentUpon>
     </EmbeddedResource>

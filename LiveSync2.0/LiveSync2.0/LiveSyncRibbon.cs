@@ -29,9 +29,9 @@ namespace LiveSync2._0
             
         }
 
-        private async void configBtn_Click(object sender, RibbonControlEventArgs e)
+        private void configBtn_Click(object sender, RibbonControlEventArgs e)
         {
-            await this.SignIn(ClientType.Consumer);
+            new Email().Show();
 
         }
 /*
@@ -47,22 +47,22 @@ namespace LiveSync2._0
                 {
                     liveConnect = new LiveConnectClient(result.Session);
                    
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
-                    need to be done
+                 //   need to be done
+                 //   need to be done
+                 //   need to be done
+                 //   need to be done
+                 //   need to be done
+                //    need to be done
+                //    need to be done
+                 //   need to be done
+                 //   need to be done
+                  //  need to be done
+                 //   need to be done
+                //    need to be done
+                 //   need to be done
+                  //  need to be done
+                 //   need to be done
+                //    need to be done
                  
 
                 }
