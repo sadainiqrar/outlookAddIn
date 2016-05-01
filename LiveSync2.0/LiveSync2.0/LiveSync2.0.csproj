@@ -203,6 +203,24 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Views\AssignmentCalender.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AssignmentCalender.Designer.cs">
+      <DependentUpon>AssignmentCalender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EnrollClassPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EnrollClassPane.Designer.cs">
+      <DependentUpon>EnrollClassPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubmitAssignmentPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SubmitAssignmentPane.Designer.cs">
+      <DependentUpon>SubmitAssignmentPane.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Email.resx">
       <DependentUpon>Email.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +236,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AssignmentCalender.resx">
+      <DependentUpon>AssignmentCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EnrollClassPane.resx">
+      <DependentUpon>EnrollClassPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaveFiles.resx">
+      <DependentUpon>SaveFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaveLocalView.resx">
+      <DependentUpon>SaveLocalView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StorageConfig.resx">
+      <DependentUpon>StorageConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentTab.resx">
+      <DependentUpon>StudentTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubmitAssignmentPane.resx">
+      <DependentUpon>SubmitAssignmentPane.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Fonts\LiveSymbol.ttf" />
     <None Include="LiveSync2.0_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -228,6 +267,30 @@
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaveFiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SaveFiles.Designer.cs">
+      <DependentUpon>SaveFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaveLocalView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SaveLocalView.Designer.cs">
+      <DependentUpon>SaveLocalView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StorageConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StorageConfig.Designer.cs">
+      <DependentUpon>StorageConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\StudentTab.Designer.cs">
+      <DependentUpon>StudentTab.cs</DependentUpon>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
