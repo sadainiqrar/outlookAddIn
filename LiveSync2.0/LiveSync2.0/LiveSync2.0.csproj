@@ -188,20 +188,20 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="Email.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Email.Designer.cs">
-      <DependentUpon>Email.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LiveSyncRibbon.cs">
+    <Compile Include="Views\LiveSyncRibbon.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="LiveSyncRibbon.Designer.cs">
+    <Compile Include="Views\LiveSyncRibbon.Designer.cs">
       <DependentUpon>LiveSyncRibbon.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\AddStudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddStudentList.Designer.cs">
+      <DependentUpon>AddStudentList.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\AssignmentCalender.cs">
       <SubType>UserControl</SubType>
@@ -209,11 +209,29 @@
     <Compile Include="Views\AssignmentCalender.Designer.cs">
       <DependentUpon>AssignmentCalender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CreateClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CreateClass.Designer.cs">
+      <DependentUpon>CreateClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DownloadSubmission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DownloadSubmission.Designer.cs">
+      <DependentUpon>DownloadSubmission.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\EnrollClassPane.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\EnrollClassPane.Designer.cs">
       <DependentUpon>EnrollClassPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowClasses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ShowClasses.Designer.cs">
+      <DependentUpon>ShowClasses.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SubmitAssignmentPane.cs">
       <SubType>UserControl</SubType>
@@ -221,10 +239,13 @@
     <Compile Include="Views\SubmitAssignmentPane.Designer.cs">
       <DependentUpon>SubmitAssignmentPane.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Email.resx">
-      <DependentUpon>Email.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LiveSyncRibbon.resx">
+    <Compile Include="Views\UploadAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UploadAssignment.Designer.cs">
+      <DependentUpon>UploadAssignment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\LiveSyncRibbon.resx">
       <DependentUpon>LiveSyncRibbon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -236,8 +257,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AddStudentList.resx">
+      <DependentUpon>AddStudentList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AssignmentCalender.resx">
       <DependentUpon>AssignmentCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreateClass.resx">
+      <DependentUpon>CreateClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DownloadSubmission.resx">
+      <DependentUpon>DownloadSubmission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EnrollClassPane.resx">
       <DependentUpon>EnrollClassPane.cs</DependentUpon>
@@ -248,14 +278,17 @@
     <EmbeddedResource Include="Views\SaveLocalView.resx">
       <DependentUpon>SaveLocalView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShowClasses.resx">
+      <DependentUpon>ShowClasses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\StorageConfig.resx">
       <DependentUpon>StorageConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\StudentTab.resx">
-      <DependentUpon>StudentTab.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\SubmitAssignmentPane.resx">
       <DependentUpon>SubmitAssignmentPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UploadAssignment.resx">
+      <DependentUpon>UploadAssignment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Fonts\LiveSymbol.ttf" />
     <None Include="LiveSync2.0_TemporaryKey.pfx" />
@@ -285,12 +318,6 @@
     </Compile>
     <Compile Include="Views\StorageConfig.Designer.cs">
       <DependentUpon>StorageConfig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\StudentTab.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Views\StudentTab.Designer.cs">
-      <DependentUpon>StudentTab.cs</DependentUpon>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>

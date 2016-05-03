@@ -11,7 +11,7 @@ using Microsoft.Live;
 using Microsoft.OneDrive.Sdk;
 using Microsoft.OneDrive.Sdk.WindowsForms;
 
-namespace LiveSync2._0
+namespace LiveSync2._0.Views
 {
     public partial class LiveSyncRibbon
     {
@@ -28,12 +28,7 @@ namespace LiveSync2._0
         {
             
         }
-
-        private void configBtn_Click(object sender, RibbonControlEventArgs e)
-        {
-            new Email().Show();
-
-        }
+        
 /*
         private async Task<int> UploadFileToOneDrive()
         {
@@ -106,8 +101,13 @@ namespace LiveSync2._0
                 }
             }
         }
-        private void DownloadBtn_Click(object sender, RibbonControlEventArgs e)
+
+        private void configBtn_Click(object sender, RibbonControlEventArgs e)
         {
+
+        }
+        private void DownloadBtn_Click(object sender, RibbonControlEventArgs e)
+        {/*
             Outlook.Application app = new Outlook.Application();
             Outlook.Accounts acc = app.Session.Accounts;
             foreach (Outlook.Account ac in acc)
@@ -140,7 +140,7 @@ namespace LiveSync2._0
                         System.Windows.Forms.MessageBox.Show("Folder doesnot exist");
                     }
                 }
-            }
+            }*/
         }
     }
 }

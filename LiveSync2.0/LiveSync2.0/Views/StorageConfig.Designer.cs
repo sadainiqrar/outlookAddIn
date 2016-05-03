@@ -30,11 +30,11 @@
         {
             this.LocalStorageTabBtn = new System.Windows.Forms.TabControl();
             this.LocalStorageTab = new System.Windows.Forms.TabPage();
-            this.OneDriveStorageTab = new System.Windows.Forms.TabPage();
             this.CreateFolderBtn = new System.Windows.Forms.Button();
-            this.SignInBtn = new System.Windows.Forms.Button();
-            this.SignOutbtn = new System.Windows.Forms.Button();
+            this.OneDriveStorageTab = new System.Windows.Forms.TabPage();
             this.OCreateFolderBtn = new System.Windows.Forms.Button();
+            this.SignOutbtn = new System.Windows.Forms.Button();
+            this.SignInBtn = new System.Windows.Forms.Button();
             this.saveConfigBtn = new System.Windows.Forms.Button();
             this.LocalStorageTabBtn.SuspendLayout();
             this.LocalStorageTab.SuspendLayout();
@@ -62,19 +62,6 @@
             this.LocalStorageTab.TabIndex = 0;
             this.LocalStorageTab.Text = "Local";
             // 
-            // OneDriveStorageTab
-            // 
-            this.OneDriveStorageTab.BackColor = System.Drawing.SystemColors.Menu;
-            this.OneDriveStorageTab.Controls.Add(this.OCreateFolderBtn);
-            this.OneDriveStorageTab.Controls.Add(this.SignOutbtn);
-            this.OneDriveStorageTab.Controls.Add(this.SignInBtn);
-            this.OneDriveStorageTab.Location = new System.Drawing.Point(4, 22);
-            this.OneDriveStorageTab.Name = "OneDriveStorageTab";
-            this.OneDriveStorageTab.Padding = new System.Windows.Forms.Padding(3);
-            this.OneDriveStorageTab.Size = new System.Drawing.Size(226, 69);
-            this.OneDriveStorageTab.TabIndex = 1;
-            this.OneDriveStorageTab.Text = "One Drive";
-            // 
             // CreateFolderBtn
             // 
             this.CreateFolderBtn.Location = new System.Drawing.Point(56, 22);
@@ -84,14 +71,27 @@
             this.CreateFolderBtn.Text = "Create Folder";
             this.CreateFolderBtn.UseVisualStyleBackColor = true;
             // 
-            // SignInBtn
+            // OneDriveStorageTab
             // 
-            this.SignInBtn.Location = new System.Drawing.Point(6, 23);
-            this.SignInBtn.Name = "SignInBtn";
-            this.SignInBtn.Size = new System.Drawing.Size(75, 23);
-            this.SignInBtn.TabIndex = 0;
-            this.SignInBtn.Text = "Sign In";
-            this.SignInBtn.UseVisualStyleBackColor = true;
+            this.OneDriveStorageTab.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.OneDriveStorageTab.Controls.Add(this.OCreateFolderBtn);
+            this.OneDriveStorageTab.Controls.Add(this.SignOutbtn);
+            this.OneDriveStorageTab.Controls.Add(this.SignInBtn);
+            this.OneDriveStorageTab.Location = new System.Drawing.Point(4, 22);
+            this.OneDriveStorageTab.Name = "OneDriveStorageTab";
+            this.OneDriveStorageTab.Padding = new System.Windows.Forms.Padding(3);
+            this.OneDriveStorageTab.Size = new System.Drawing.Size(222, 68);
+            this.OneDriveStorageTab.TabIndex = 1;
+            this.OneDriveStorageTab.Text = "One Drive";
+            // 
+            // OCreateFolderBtn
+            // 
+            this.OCreateFolderBtn.Location = new System.Drawing.Point(103, 23);
+            this.OCreateFolderBtn.Name = "OCreateFolderBtn";
+            this.OCreateFolderBtn.Size = new System.Drawing.Size(103, 23);
+            this.OCreateFolderBtn.TabIndex = 2;
+            this.OCreateFolderBtn.Text = "Create Folder";
+            this.OCreateFolderBtn.UseVisualStyleBackColor = true;
             // 
             // SignOutbtn
             // 
@@ -102,14 +102,14 @@
             this.SignOutbtn.Text = "Sign Out";
             this.SignOutbtn.UseVisualStyleBackColor = true;
             // 
-            // OCreateFolderBtn
+            // SignInBtn
             // 
-            this.OCreateFolderBtn.Location = new System.Drawing.Point(103, 23);
-            this.OCreateFolderBtn.Name = "OCreateFolderBtn";
-            this.OCreateFolderBtn.Size = new System.Drawing.Size(103, 23);
-            this.OCreateFolderBtn.TabIndex = 2;
-            this.OCreateFolderBtn.Text = "Create Folder";
-            this.OCreateFolderBtn.UseVisualStyleBackColor = true;
+            this.SignInBtn.Location = new System.Drawing.Point(6, 23);
+            this.SignInBtn.Name = "SignInBtn";
+            this.SignInBtn.Size = new System.Drawing.Size(75, 23);
+            this.SignInBtn.TabIndex = 0;
+            this.SignInBtn.Text = "Sign In";
+            this.SignInBtn.UseVisualStyleBackColor = true;
             // 
             // saveConfigBtn
             // 
