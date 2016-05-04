@@ -39,6 +39,7 @@
             this.AddExcelBtn = new System.Windows.Forms.Button();
             this.SaveBTn = new System.Windows.Forms.Button();
             this.CancelBtn = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // classNameTxt
@@ -93,6 +94,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Add List";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -104,6 +106,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Add Form Excel";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // AddListBtn
             // 
@@ -113,6 +116,8 @@
             this.AddListBtn.TabIndex = 7;
             this.AddListBtn.Text = "Add List";
             this.AddListBtn.UseVisualStyleBackColor = true;
+            this.AddListBtn.Visible = false;
+            this.AddListBtn.Click += new System.EventHandler(this.AddListBtn_Click);
             // 
             // AddExcelBtn
             // 
@@ -122,6 +127,7 @@
             this.AddExcelBtn.TabIndex = 8;
             this.AddExcelBtn.Text = "Excel Sheet";
             this.AddExcelBtn.UseVisualStyleBackColor = true;
+            this.AddExcelBtn.Visible = false;
             // 
             // SaveBTn
             // 
@@ -140,6 +146,11 @@
             this.CancelBtn.TabIndex = 10;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = true;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // CreateClass
             // 
@@ -160,6 +171,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateClass";
             this.Text = "CreateClass";
+            this.Load += new System.EventHandler(this.CreateClass_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +190,6 @@
         private System.Windows.Forms.Button AddExcelBtn;
         private System.Windows.Forms.Button SaveBTn;
         private System.Windows.Forms.Button CancelBtn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

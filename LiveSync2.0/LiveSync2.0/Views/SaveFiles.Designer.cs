@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dateGBOX = new System.Windows.Forms.GroupBox();
             this.NextsaveBtn = new System.Windows.Forms.Button();
-            this.CancelBtn = new System.Windows.Forms.Button();
             this.dateGBOX.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +49,7 @@
             this.groupCBtn.TabIndex = 0;
             this.groupCBtn.Text = "Class";
             this.groupCBtn.UseVisualStyleBackColor = true;
+            this.groupCBtn.CheckedChanged += new System.EventHandler(this.groupCBtn_CheckedChanged);
             // 
             // dateCbtn
             // 
@@ -60,6 +60,7 @@
             this.dateCbtn.TabIndex = 1;
             this.dateCbtn.Text = "From Date";
             this.dateCbtn.UseVisualStyleBackColor = true;
+            this.dateCbtn.CheckedChanged += new System.EventHandler(this.dateCbtn_CheckedChanged);
             // 
             // classCBOX
             // 
@@ -68,6 +69,7 @@
             this.classCBOX.Name = "classCBOX";
             this.classCBOX.Size = new System.Drawing.Size(121, 21);
             this.classCBOX.TabIndex = 2;
+            this.classCBOX.Visible = false;
             // 
             // dateTimePicker1
             // 
@@ -112,31 +114,23 @@
             this.dateGBOX.Size = new System.Drawing.Size(260, 98);
             this.dateGBOX.TabIndex = 7;
             this.dateGBOX.TabStop = false;
+            this.dateGBOX.Visible = false;
             // 
             // NextsaveBtn
             // 
-            this.NextsaveBtn.Location = new System.Drawing.Point(35, 212);
+            this.NextsaveBtn.Location = new System.Drawing.Point(107, 209);
             this.NextsaveBtn.Name = "NextsaveBtn";
             this.NextsaveBtn.Size = new System.Drawing.Size(75, 23);
             this.NextsaveBtn.TabIndex = 8;
             this.NextsaveBtn.Text = "Next";
             this.NextsaveBtn.UseVisualStyleBackColor = true;
-            // 
-            // CancelBtn
-            // 
-            this.CancelBtn.Location = new System.Drawing.Point(156, 212);
-            this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(75, 23);
-            this.CancelBtn.TabIndex = 9;
-            this.CancelBtn.Text = "Cancel";
-            this.CancelBtn.UseVisualStyleBackColor = true;
+            this.NextsaveBtn.Click += new System.EventHandler(this.NextsaveBtn_Click);
             // 
             // SaveFiles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.CancelBtn);
             this.Controls.Add(this.NextsaveBtn);
             this.Controls.Add(this.dateGBOX);
             this.Controls.Add(this.classCBOX);
@@ -162,6 +156,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox dateGBOX;
         private System.Windows.Forms.Button NextsaveBtn;
-        private System.Windows.Forms.Button CancelBtn;
     }
 }

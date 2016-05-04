@@ -35,7 +35,7 @@
             this.customPathtxt = new System.Windows.Forms.TextBox();
             this.BrowseFolderBTn = new System.Windows.Forms.Button();
             this.downloadBtn = new System.Windows.Forms.Button();
-            this.CancelsaveBtn = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // defaultsaveRBTN
@@ -48,6 +48,7 @@
             this.defaultsaveRBTN.TabStop = true;
             this.defaultsaveRBTN.Text = "Default";
             this.defaultsaveRBTN.UseVisualStyleBackColor = true;
+            this.defaultsaveRBTN.CheckedChanged += new System.EventHandler(this.defaultsaveRBTN_CheckedChanged);
             // 
             // liveSyncRBTN
             // 
@@ -59,6 +60,7 @@
             this.liveSyncRBTN.TabStop = true;
             this.liveSyncRBTN.Text = "Live Sync Folder";
             this.liveSyncRBTN.UseVisualStyleBackColor = true;
+            this.liveSyncRBTN.CheckedChanged += new System.EventHandler(this.liveSyncRBTN_CheckedChanged);
             // 
             // folderComboBox
             // 
@@ -67,6 +69,7 @@
             this.folderComboBox.Name = "folderComboBox";
             this.folderComboBox.Size = new System.Drawing.Size(149, 21);
             this.folderComboBox.TabIndex = 2;
+            this.folderComboBox.Visible = false;
             // 
             // CustomSaveBtn
             // 
@@ -78,6 +81,7 @@
             this.CustomSaveBtn.TabStop = true;
             this.CustomSaveBtn.Text = "Custom";
             this.CustomSaveBtn.UseVisualStyleBackColor = true;
+            this.CustomSaveBtn.CheckedChanged += new System.EventHandler(this.CustomSaveBtn_CheckedChanged);
             // 
             // customPathtxt
             // 
@@ -85,6 +89,7 @@
             this.customPathtxt.Name = "customPathtxt";
             this.customPathtxt.Size = new System.Drawing.Size(149, 20);
             this.customPathtxt.TabIndex = 4;
+            this.customPathtxt.Visible = false;
             // 
             // BrowseFolderBTn
             // 
@@ -94,31 +99,22 @@
             this.BrowseFolderBTn.TabIndex = 5;
             this.BrowseFolderBTn.Text = "Browse";
             this.BrowseFolderBTn.UseVisualStyleBackColor = true;
+            this.BrowseFolderBTn.Visible = false;
             // 
             // downloadBtn
             // 
-            this.downloadBtn.Location = new System.Drawing.Point(41, 155);
+            this.downloadBtn.Location = new System.Drawing.Point(96, 157);
             this.downloadBtn.Name = "downloadBtn";
             this.downloadBtn.Size = new System.Drawing.Size(75, 23);
             this.downloadBtn.TabIndex = 6;
             this.downloadBtn.Text = "Save";
             this.downloadBtn.UseVisualStyleBackColor = true;
             // 
-            // CancelsaveBtn
-            // 
-            this.CancelsaveBtn.Location = new System.Drawing.Point(144, 155);
-            this.CancelsaveBtn.Name = "CancelsaveBtn";
-            this.CancelsaveBtn.Size = new System.Drawing.Size(75, 23);
-            this.CancelsaveBtn.TabIndex = 7;
-            this.CancelsaveBtn.Text = "Cancel";
-            this.CancelsaveBtn.UseVisualStyleBackColor = true;
-            // 
             // SaveLocalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.CancelsaveBtn);
             this.Controls.Add(this.downloadBtn);
             this.Controls.Add(this.BrowseFolderBTn);
             this.Controls.Add(this.customPathtxt);
@@ -142,6 +138,6 @@
         private System.Windows.Forms.TextBox customPathtxt;
         private System.Windows.Forms.Button BrowseFolderBTn;
         private System.Windows.Forms.Button downloadBtn;
-        private System.Windows.Forms.Button CancelsaveBtn;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

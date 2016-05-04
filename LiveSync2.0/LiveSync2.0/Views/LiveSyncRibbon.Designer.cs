@@ -42,6 +42,15 @@ namespace LiveSync2._0.Views
             this.OAccountBtn = this.Factory.CreateRibbonButton();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.studentTab = this.Factory.CreateRibbonTab();
+            this.DownloadGroup = this.Factory.CreateRibbonGroup();
+            this.saveLocalBtn = this.Factory.CreateRibbonButton();
+            this.saveOutlookBtn = this.Factory.CreateRibbonButton();
+            this.AssignmentsGroup = this.Factory.CreateRibbonGroup();
+            this.ShowAssignmentsBtn = this.Factory.CreateRibbonButton();
+            this.SubmitBtn = this.Factory.CreateRibbonButton();
+            this.EnrollGroup = this.Factory.CreateRibbonGroup();
+            this.EnrollBtn = this.Factory.CreateRibbonButton();
+            this.SShowClassBTn = this.Factory.CreateRibbonButton();
             this.tutorTab = this.Factory.CreateRibbonTab();
             this.ClassGroup = this.Factory.CreateRibbonGroup();
             this.CreateClassbtn = this.Factory.CreateRibbonButton();
@@ -49,24 +58,15 @@ namespace LiveSync2._0.Views
             this.AssignmentGroup = this.Factory.CreateRibbonGroup();
             this.CreateAssignBtn = this.Factory.CreateRibbonButton();
             this.DownloadSubmissionsBTn = this.Factory.CreateRibbonButton();
-            this.SShowClassBTn = this.Factory.CreateRibbonButton();
-            this.EnrollBtn = this.Factory.CreateRibbonButton();
-            this.EnrollGroup = this.Factory.CreateRibbonGroup();
-            this.SubmitBtn = this.Factory.CreateRibbonButton();
-            this.ShowAssignmentsBtn = this.Factory.CreateRibbonButton();
-            this.AssignmentsGroup = this.Factory.CreateRibbonGroup();
-            this.saveOutlookBtn = this.Factory.CreateRibbonButton();
-            this.saveLocalBtn = this.Factory.CreateRibbonButton();
-            this.DownloadGroup = this.Factory.CreateRibbonGroup();
             this.LiveSyncTab.SuspendLayout();
             this.LiveSyncG1.SuspendLayout();
             this.studentTab.SuspendLayout();
+            this.DownloadGroup.SuspendLayout();
+            this.AssignmentsGroup.SuspendLayout();
+            this.EnrollGroup.SuspendLayout();
             this.tutorTab.SuspendLayout();
             this.ClassGroup.SuspendLayout();
             this.AssignmentGroup.SuspendLayout();
-            this.EnrollGroup.SuspendLayout();
-            this.AssignmentsGroup.SuspendLayout();
-            this.DownloadGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // LiveSyncTab
@@ -102,6 +102,63 @@ namespace LiveSync2._0.Views
             this.studentTab.Label = "Student Tab";
             this.studentTab.Name = "studentTab";
             // 
+            // DownloadGroup
+            // 
+            this.DownloadGroup.Items.Add(this.saveLocalBtn);
+            this.DownloadGroup.Items.Add(this.saveOutlookBtn);
+            this.DownloadGroup.Label = "Download";
+            this.DownloadGroup.Name = "DownloadGroup";
+            // 
+            // saveLocalBtn
+            // 
+            this.saveLocalBtn.Label = "Save Local";
+            this.saveLocalBtn.Name = "saveLocalBtn";
+            this.saveLocalBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.saveLocalBtn_Click);
+            // 
+            // saveOutlookBtn
+            // 
+            this.saveOutlookBtn.Label = "Save to OneDrive";
+            this.saveOutlookBtn.Name = "saveOutlookBtn";
+            this.saveOutlookBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.saveOutlookBtn_Click);
+            // 
+            // AssignmentsGroup
+            // 
+            this.AssignmentsGroup.Items.Add(this.ShowAssignmentsBtn);
+            this.AssignmentsGroup.Items.Add(this.SubmitBtn);
+            this.AssignmentsGroup.Label = "Assignments";
+            this.AssignmentsGroup.Name = "AssignmentsGroup";
+            // 
+            // ShowAssignmentsBtn
+            // 
+            this.ShowAssignmentsBtn.Label = "Show Assignments";
+            this.ShowAssignmentsBtn.Name = "ShowAssignmentsBtn";
+            this.ShowAssignmentsBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.ShowAssignmentsBtn_Click);
+            // 
+            // SubmitBtn
+            // 
+            this.SubmitBtn.Label = "Submit Assignment";
+            this.SubmitBtn.Name = "SubmitBtn";
+            this.SubmitBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.SubmitBtn_Click);
+            // 
+            // EnrollGroup
+            // 
+            this.EnrollGroup.Items.Add(this.EnrollBtn);
+            this.EnrollGroup.Items.Add(this.SShowClassBTn);
+            this.EnrollGroup.Label = "Enrollment";
+            this.EnrollGroup.Name = "EnrollGroup";
+            // 
+            // EnrollBtn
+            // 
+            this.EnrollBtn.Label = "Enroll in Class";
+            this.EnrollBtn.Name = "EnrollBtn";
+            this.EnrollBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.EnrollBtn_Click);
+            // 
+            // SShowClassBTn
+            // 
+            this.SShowClassBTn.Label = "Show Classes";
+            this.SShowClassBTn.Name = "SShowClassBTn";
+            this.SShowClassBTn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.SShowClassBTn_Click);
+            // 
             // tutorTab
             // 
             this.tutorTab.Groups.Add(this.ClassGroup);
@@ -120,11 +177,13 @@ namespace LiveSync2._0.Views
             // 
             this.CreateClassbtn.Label = "Create Class";
             this.CreateClassbtn.Name = "CreateClassbtn";
+            this.CreateClassbtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.CreateClassbtn_Click);
             // 
             // ShowclassBtn
             // 
             this.ShowclassBtn.Label = "Show Classes";
             this.ShowclassBtn.Name = "ShowclassBtn";
+            this.ShowclassBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.ShowclassBtn_Click);
             // 
             // AssignmentGroup
             // 
@@ -137,62 +196,13 @@ namespace LiveSync2._0.Views
             // 
             this.CreateAssignBtn.Label = "Upload Assignment";
             this.CreateAssignBtn.Name = "CreateAssignBtn";
+            this.CreateAssignBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.CreateAssignBtn_Click);
             // 
             // DownloadSubmissionsBTn
             // 
             this.DownloadSubmissionsBTn.Label = "Download Submissions";
             this.DownloadSubmissionsBTn.Name = "DownloadSubmissionsBTn";
-            // 
-            // SShowClassBTn
-            // 
-            this.SShowClassBTn.Label = "Show Classes";
-            this.SShowClassBTn.Name = "SShowClassBTn";
-            // 
-            // EnrollBtn
-            // 
-            this.EnrollBtn.Label = "Enroll in Class";
-            this.EnrollBtn.Name = "EnrollBtn";
-            // 
-            // EnrollGroup
-            // 
-            this.EnrollGroup.Items.Add(this.EnrollBtn);
-            this.EnrollGroup.Items.Add(this.SShowClassBTn);
-            this.EnrollGroup.Label = "Enrollment";
-            this.EnrollGroup.Name = "EnrollGroup";
-            // 
-            // SubmitBtn
-            // 
-            this.SubmitBtn.Label = "Submit Assignment";
-            this.SubmitBtn.Name = "SubmitBtn";
-            // 
-            // ShowAssignmentsBtn
-            // 
-            this.ShowAssignmentsBtn.Label = "Show Assignments";
-            this.ShowAssignmentsBtn.Name = "ShowAssignmentsBtn";
-            // 
-            // AssignmentsGroup
-            // 
-            this.AssignmentsGroup.Items.Add(this.ShowAssignmentsBtn);
-            this.AssignmentsGroup.Items.Add(this.SubmitBtn);
-            this.AssignmentsGroup.Label = "Assignments";
-            this.AssignmentsGroup.Name = "AssignmentsGroup";
-            // 
-            // saveOutlookBtn
-            // 
-            this.saveOutlookBtn.Label = "Save to Outlook";
-            this.saveOutlookBtn.Name = "saveOutlookBtn";
-            // 
-            // saveLocalBtn
-            // 
-            this.saveLocalBtn.Label = "Save Local";
-            this.saveLocalBtn.Name = "saveLocalBtn";
-            // 
-            // DownloadGroup
-            // 
-            this.DownloadGroup.Items.Add(this.saveLocalBtn);
-            this.DownloadGroup.Items.Add(this.saveOutlookBtn);
-            this.DownloadGroup.Label = "Download";
-            this.DownloadGroup.Name = "DownloadGroup";
+            this.DownloadSubmissionsBTn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.DownloadSubmissionsBTn_Click);
             // 
             // LiveSyncRibbon
             // 
@@ -208,18 +218,18 @@ namespace LiveSync2._0.Views
             this.LiveSyncG1.PerformLayout();
             this.studentTab.ResumeLayout(false);
             this.studentTab.PerformLayout();
+            this.DownloadGroup.ResumeLayout(false);
+            this.DownloadGroup.PerformLayout();
+            this.AssignmentsGroup.ResumeLayout(false);
+            this.AssignmentsGroup.PerformLayout();
+            this.EnrollGroup.ResumeLayout(false);
+            this.EnrollGroup.PerformLayout();
             this.tutorTab.ResumeLayout(false);
             this.tutorTab.PerformLayout();
             this.ClassGroup.ResumeLayout(false);
             this.ClassGroup.PerformLayout();
             this.AssignmentGroup.ResumeLayout(false);
             this.AssignmentGroup.PerformLayout();
-            this.EnrollGroup.ResumeLayout(false);
-            this.EnrollGroup.PerformLayout();
-            this.AssignmentsGroup.ResumeLayout(false);
-            this.AssignmentsGroup.PerformLayout();
-            this.DownloadGroup.ResumeLayout(false);
-            this.DownloadGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }

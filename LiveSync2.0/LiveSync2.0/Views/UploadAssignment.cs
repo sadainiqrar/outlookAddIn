@@ -16,5 +16,10 @@ namespace LiveSync2._0.Views
         {
             InitializeComponent();
         }
+
+        private void CancelAssignBTn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
     }
 }

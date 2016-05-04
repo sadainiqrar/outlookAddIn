@@ -38,7 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.UploadBtn = new System.Windows.Forms.Button();
             this.submitBTn = new System.Windows.Forms.Button();
-            this.CancelBTn = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -118,28 +118,22 @@
             // 
             // submitBTn
             // 
-            this.submitBTn.Location = new System.Drawing.Point(30, 210);
+            this.submitBTn.Location = new System.Drawing.Point(86, 212);
             this.submitBTn.Name = "submitBTn";
             this.submitBTn.Size = new System.Drawing.Size(75, 23);
             this.submitBTn.TabIndex = 9;
             this.submitBTn.Text = "Submit";
             this.submitBTn.UseVisualStyleBackColor = true;
             // 
-            // CancelBTn
+            // openFileDialog1
             // 
-            this.CancelBTn.Location = new System.Drawing.Point(132, 210);
-            this.CancelBTn.Name = "CancelBTn";
-            this.CancelBTn.Size = new System.Drawing.Size(75, 23);
-            this.CancelBTn.TabIndex = 10;
-            this.CancelBTn.Text = "Cancel";
-            this.CancelBTn.UseVisualStyleBackColor = true;
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // SubmitAssignmentPane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.CancelBTn);
             this.Controls.Add(this.submitBTn);
             this.Controls.Add(this.UploadBtn);
             this.Controls.Add(this.label4);
@@ -169,6 +163,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button UploadBtn;
         private System.Windows.Forms.Button submitBTn;
-        private System.Windows.Forms.Button CancelBTn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

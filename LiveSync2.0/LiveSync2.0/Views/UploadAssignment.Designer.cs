@@ -39,9 +39,9 @@
             this.BrowsefileBtn = new System.Windows.Forms.Button();
             this.FilePathtxt = new System.Windows.Forms.TextBox();
             this.UploadassignBtn = new System.Windows.Forms.Button();
-            this.CancelAssignBTn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.deadlineDatePick = new System.Windows.Forms.DateTimePicker();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // assignNameTxt
@@ -130,21 +130,12 @@
             // 
             // UploadassignBtn
             // 
-            this.UploadassignBtn.Location = new System.Drawing.Point(56, 290);
+            this.UploadassignBtn.Location = new System.Drawing.Point(105, 290);
             this.UploadassignBtn.Name = "UploadassignBtn";
             this.UploadassignBtn.Size = new System.Drawing.Size(75, 23);
             this.UploadassignBtn.TabIndex = 10;
             this.UploadassignBtn.Text = "upload";
             this.UploadassignBtn.UseVisualStyleBackColor = true;
-            // 
-            // CancelAssignBTn
-            // 
-            this.CancelAssignBTn.Location = new System.Drawing.Point(154, 290);
-            this.CancelAssignBTn.Name = "CancelAssignBTn";
-            this.CancelAssignBTn.Size = new System.Drawing.Size(75, 23);
-            this.CancelAssignBTn.TabIndex = 11;
-            this.CancelAssignBTn.Text = "Cancel";
-            this.CancelAssignBTn.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -162,6 +153,10 @@
             this.deadlineDatePick.Size = new System.Drawing.Size(169, 20);
             this.deadlineDatePick.TabIndex = 13;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // UploadAssignment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,7 +164,6 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.deadlineDatePick);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.CancelAssignBTn);
             this.Controls.Add(this.UploadassignBtn);
             this.Controls.Add(this.FilePathtxt);
             this.Controls.Add(this.BrowsefileBtn);
@@ -200,8 +194,8 @@
         private System.Windows.Forms.Button BrowsefileBtn;
         private System.Windows.Forms.TextBox FilePathtxt;
         private System.Windows.Forms.Button UploadassignBtn;
-        private System.Windows.Forms.Button CancelAssignBTn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker deadlineDatePick;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -104,10 +104,19 @@ namespace LiveSync2._0.Views
 
         private void configBtn_Click(object sender, RibbonControlEventArgs e)
         {
-
+            new StorageConfig().Visible = true;
         }
+        //Outlook Account Button
         private void DownloadBtn_Click(object sender, RibbonControlEventArgs e)
-        {/*
+        {/* Outlook Account Button
+
+
+
+
+
+
+
+
             Outlook.Application app = new Outlook.Application();
             Outlook.Accounts acc = app.Session.Accounts;
             foreach (Outlook.Account ac in acc)
@@ -141,6 +150,59 @@ namespace LiveSync2._0.Views
                     }
                 }
             }*/
+        }
+
+        private void SShowClassBTn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.showClassesTaskPane.Visible = true;
+        }
+
+        private void EnrollBtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.enrollClassPane.Visible = true;
+        }
+
+        private void ShowAssignmentsBtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.showAssignmentsPane.Visible = true;
+        }
+
+        private void SubmitBtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.submitAssignmentPane.Visible = true;
+        }
+
+        private void saveLocalBtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.saveFilesPaneLocal.Visible = true;
+        }
+
+        private void saveOutlookBtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.saveFilesOneDrive.Visible = true;
+        }
+
+        private void ShowclassBtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.showClassesTaskPane.Visible = true;
+
+        }
+
+        private void CreateAssignBtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.uploadssignmentPane.Visible = true;
+
+        }
+
+        private void DownloadSubmissionsBTn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.downloadSubmissionsPane.Visible = true;
+
+        }
+
+        private void CreateClassbtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            new CreateClass().Visible = true;
         }
     }
 }

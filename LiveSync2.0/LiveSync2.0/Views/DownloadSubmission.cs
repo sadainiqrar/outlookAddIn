@@ -16,5 +16,20 @@ namespace LiveSync2._0.Views
         {
             InitializeComponent();
         }
+
+        private void CancelBTn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void cusRBTN_CheckedChanged(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void defRBTN_CheckedChanged(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
     }
 }

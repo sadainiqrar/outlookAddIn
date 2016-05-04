@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.saveSubBTn = new System.Windows.Forms.Button();
-            this.CancelBTn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +73,7 @@
             this.cusRBTN.TabStop = true;
             this.cusRBTN.Text = "Custom";
             this.cusRBTN.UseVisualStyleBackColor = true;
+            this.cusRBTN.CheckedChanged += new System.EventHandler(this.cusRBTN_CheckedChanged);
             // 
             // defRBTN
             // 
@@ -85,6 +85,7 @@
             this.defRBTN.TabStop = true;
             this.defRBTN.Text = "Default";
             this.defRBTN.UseVisualStyleBackColor = true;
+            this.defRBTN.CheckedChanged += new System.EventHandler(this.defRBTN_CheckedChanged);
             // 
             // label1
             // 
@@ -115,21 +116,12 @@
             // 
             // saveSubBTn
             // 
-            this.saveSubBTn.Location = new System.Drawing.Point(23, 175);
+            this.saveSubBTn.Location = new System.Drawing.Point(80, 175);
             this.saveSubBTn.Name = "saveSubBTn";
             this.saveSubBTn.Size = new System.Drawing.Size(75, 23);
             this.saveSubBTn.TabIndex = 8;
             this.saveSubBTn.Text = "Save";
             this.saveSubBTn.UseVisualStyleBackColor = true;
-            // 
-            // CancelBTn
-            // 
-            this.CancelBTn.Location = new System.Drawing.Point(116, 175);
-            this.CancelBTn.Name = "CancelBTn";
-            this.CancelBTn.Size = new System.Drawing.Size(75, 23);
-            this.CancelBTn.TabIndex = 9;
-            this.CancelBTn.Text = "Cancel";
-            this.CancelBTn.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -141,6 +133,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 66);
             this.panel1.TabIndex = 10;
+            this.panel1.Visible = false;
             // 
             // DownloadSubmission
             // 
@@ -148,7 +141,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.CancelBTn);
             this.Controls.Add(this.saveSubBTn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.defRBTN);
@@ -174,7 +166,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button saveSubBTn;
-        private System.Windows.Forms.Button CancelBTn;
         private System.Windows.Forms.Panel panel1;
     }
 }

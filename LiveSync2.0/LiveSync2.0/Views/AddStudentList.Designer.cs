@@ -68,11 +68,13 @@
             this.cancelBTn.TabIndex = 3;
             this.cancelBTn.Text = "Cancel";
             this.cancelBTn.UseVisualStyleBackColor = true;
+            this.cancelBTn.Click += new System.EventHandler(this.cancelBTn_Click);
             // 
             // AddStudentList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(218, 269);
             this.Controls.Add(this.cancelBTn);
             this.Controls.Add(this.OkListBtn);

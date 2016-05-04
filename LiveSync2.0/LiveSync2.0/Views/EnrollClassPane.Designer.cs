@@ -33,7 +33,6 @@
             this.classNametxt = new System.Windows.Forms.TextBox();
             this.classKeytxt = new System.Windows.Forms.TextBox();
             this.enrollBtn = new System.Windows.Forms.Button();
-            this.cancelBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -70,28 +69,18 @@
             // 
             // enrollBtn
             // 
-            this.enrollBtn.Location = new System.Drawing.Point(18, 122);
+            this.enrollBtn.Location = new System.Drawing.Point(77, 120);
             this.enrollBtn.Name = "enrollBtn";
             this.enrollBtn.Size = new System.Drawing.Size(75, 23);
             this.enrollBtn.TabIndex = 4;
             this.enrollBtn.Text = "Enroll";
             this.enrollBtn.UseVisualStyleBackColor = true;
             // 
-            // cancelBtn
-            // 
-            this.cancelBtn.Location = new System.Drawing.Point(119, 122);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(75, 23);
-            this.cancelBtn.TabIndex = 5;
-            this.cancelBtn.Text = "Cancel";
-            this.cancelBtn.UseVisualStyleBackColor = true;
-            // 
             // EnrollClassPane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.enrollBtn);
             this.Controls.Add(this.classKeytxt);
             this.Controls.Add(this.classNametxt);
@@ -111,6 +100,5 @@
         private System.Windows.Forms.TextBox classNametxt;
         private System.Windows.Forms.TextBox classKeytxt;
         private System.Windows.Forms.Button enrollBtn;
-        private System.Windows.Forms.Button cancelBtn;
     }
 }

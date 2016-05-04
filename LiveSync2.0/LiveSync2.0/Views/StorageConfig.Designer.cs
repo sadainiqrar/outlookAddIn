@@ -36,6 +36,7 @@
             this.SignOutbtn = new System.Windows.Forms.Button();
             this.SignInBtn = new System.Windows.Forms.Button();
             this.saveConfigBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
             this.LocalStorageTabBtn.SuspendLayout();
             this.LocalStorageTab.SuspendLayout();
             this.OneDriveStorageTab.SuspendLayout();
@@ -113,12 +114,22 @@
             // 
             // saveConfigBtn
             // 
-            this.saveConfigBtn.Location = new System.Drawing.Point(52, 98);
+            this.saveConfigBtn.Location = new System.Drawing.Point(7, 98);
             this.saveConfigBtn.Name = "saveConfigBtn";
             this.saveConfigBtn.Size = new System.Drawing.Size(135, 23);
             this.saveConfigBtn.TabIndex = 1;
             this.saveConfigBtn.Text = "Save Configurations";
             this.saveConfigBtn.UseVisualStyleBackColor = true;
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.Location = new System.Drawing.Point(154, 98);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(75, 23);
+            this.cancelBtn.TabIndex = 2;
+            this.cancelBtn.Text = "Cancel";
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // StorageConfig
             // 
@@ -126,6 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(237, 123);
+            this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.saveConfigBtn);
             this.Controls.Add(this.LocalStorageTabBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -151,5 +163,6 @@
         private System.Windows.Forms.Button SignOutbtn;
         private System.Windows.Forms.Button OCreateFolderBtn;
         private System.Windows.Forms.Button saveConfigBtn;
+        private System.Windows.Forms.Button cancelBtn;
     }
 }
