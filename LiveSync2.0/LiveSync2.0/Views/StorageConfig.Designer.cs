@@ -96,6 +96,7 @@
             this.OCreateFolderBtn.Text = "Create Folder";
             this.OCreateFolderBtn.UseVisualStyleBackColor = true;
             this.OCreateFolderBtn.Visible = false;
+            this.OCreateFolderBtn.Click += new System.EventHandler(this.OCreateFolderBtn_Click);
             // 
             // SignOutbtn
             // 

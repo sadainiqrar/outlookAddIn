@@ -35,6 +35,7 @@ namespace LiveSync2._0.Models
 
             foreach(Outlook.ContactItem item in Folder_Contacts.Items)
             {
+                contacts.Add(item);
                
             }
             return contacts;

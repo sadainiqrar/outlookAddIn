@@ -51,12 +51,9 @@ namespace LiveSync2._0.Views
             {
                 await login.SignIn();
             }
-            if(!login.UpdateConnectedState())
-            {
-                SignOutbtn.Visible = true;
-                SignInBtn.Visible = true;
-                OCreateFolderBtn.Visible = true;
-            }
+            SignOutbtn.Visible = true;
+            SignInBtn.Visible = false;
+            OCreateFolderBtn.Visible = true;
         }
 
         private void SignOutbtn_Click(object sender, EventArgs e)
@@ -69,6 +66,11 @@ namespace LiveSync2._0.Views
             SignOutbtn.Visible = false;
             OCreateFolderBtn.Visible = false;
             
+        }
+
+        private void OCreateFolderBtn_Click(object sender, EventArgs e)
+        {
+           MessageBox.Show(login.getFolder());
         }
     }
 }

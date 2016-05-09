@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.OneDrive;
+using LiveSync2._0.Views;
 using Microsoft.OneDrive.Sdk;
 using Microsoft.OneDrive.Sdk.WindowsForms;
 
@@ -23,6 +24,9 @@ namespace LiveSync2._0.Models
         private IOneDriveClient oneDriveClient { get; set; }
         private Item CurrentFolder { get; set; }
         private Item SelectedItem { get; set; }
+
+
+        private OneDriveTile _selectedTile;
 
         bool connected = false;
 
@@ -118,6 +122,12 @@ namespace LiveSync2._0.Models
             return null == this.oneDriveClient;
         }
 
+
+        public string getFolder()
+        {
+            return "";
+        }
+       
 
     }
 }
