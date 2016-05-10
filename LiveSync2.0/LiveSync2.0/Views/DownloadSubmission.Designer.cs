@@ -122,6 +122,7 @@
             this.saveSubBTn.TabIndex = 8;
             this.saveSubBTn.Text = "Save";
             this.saveSubBTn.UseVisualStyleBackColor = true;
+            this.saveSubBTn.Click += new System.EventHandler(this.saveSubBTn_Click);
             // 
             // panel1
             // 

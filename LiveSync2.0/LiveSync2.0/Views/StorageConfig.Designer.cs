@@ -37,6 +37,7 @@
             this.SignInBtn = new System.Windows.Forms.Button();
             this.saveConfigBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.LocalStorageTabBtn.SuspendLayout();
             this.LocalStorageTab.SuspendLayout();
             this.OneDriveStorageTab.SuspendLayout();
@@ -71,6 +72,7 @@
             this.CreateFolderBtn.TabIndex = 0;
             this.CreateFolderBtn.Text = "Create Folder";
             this.CreateFolderBtn.UseVisualStyleBackColor = true;
+            this.CreateFolderBtn.Click += new System.EventHandler(this.CreateFolderBtn_Click);
             // 
             // OneDriveStorageTab
             // 
@@ -93,6 +95,7 @@
             this.OCreateFolderBtn.TabIndex = 2;
             this.OCreateFolderBtn.Text = "Create Folder";
             this.OCreateFolderBtn.UseVisualStyleBackColor = true;
+            this.OCreateFolderBtn.Visible = false;
             // 
             // SignOutbtn
             // 
@@ -102,6 +105,8 @@
             this.SignOutbtn.TabIndex = 1;
             this.SignOutbtn.Text = "Sign Out";
             this.SignOutbtn.UseVisualStyleBackColor = true;
+            this.SignOutbtn.Visible = false;
+            this.SignOutbtn.Click += new System.EventHandler(this.SignOutbtn_Click);
             // 
             // SignInBtn
             // 
@@ -111,6 +116,7 @@
             this.SignInBtn.TabIndex = 0;
             this.SignInBtn.Text = "Sign In";
             this.SignInBtn.UseVisualStyleBackColor = true;
+            this.SignInBtn.Click += new System.EventHandler(this.SignInBtn_Click);
             // 
             // saveConfigBtn
             // 
@@ -120,6 +126,7 @@
             this.saveConfigBtn.TabIndex = 1;
             this.saveConfigBtn.Text = "Save Configurations";
             this.saveConfigBtn.UseVisualStyleBackColor = true;
+            this.saveConfigBtn.Click += new System.EventHandler(this.saveConfigBtn_Click);
             // 
             // cancelBtn
             // 
@@ -164,5 +171,6 @@
         private System.Windows.Forms.Button OCreateFolderBtn;
         private System.Windows.Forms.Button saveConfigBtn;
         private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }

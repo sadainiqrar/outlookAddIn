@@ -188,6 +188,20 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="Models\Contacts.cs">
+      <DependentUpon>Contacts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contacts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contacts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactGroup.cs" />
+    <Compile Include="Models\DownloadEmails.cs" />
+    <Compile Include="Models\LocalFolder.cs" />
+    <Compile Include="Models\OneDriveLogin.cs" />
+    <Compile Include="Models\StorageConfiguration.cs" />
+    <Compile Include="Models\UploadAssignment.cs" />
     <Compile Include="Views\LiveSyncRibbon.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -290,6 +304,17 @@
     <EmbeddedResource Include="Views\UploadAssignment.resx">
       <DependentUpon>UploadAssignment.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Models\Contacts.xsc">
+      <DependentUpon>Contacts.xsd</DependentUpon>
+    </None>
+    <None Include="Models\Contacts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Contacts.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Models\Contacts.xss">
+      <DependentUpon>Contacts.xsd</DependentUpon>
+    </None>
     <None Include="Fonts\LiveSymbol.ttf" />
     <None Include="LiveSync2.0_TemporaryKey.pfx" />
     <None Include="packages.config" />

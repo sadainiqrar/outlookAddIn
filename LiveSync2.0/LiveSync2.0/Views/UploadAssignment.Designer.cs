@@ -120,6 +120,7 @@
             this.BrowsefileBtn.TabIndex = 8;
             this.BrowsefileBtn.Text = "Browse";
             this.BrowsefileBtn.UseVisualStyleBackColor = true;
+            this.BrowsefileBtn.Click += new System.EventHandler(this.BrowsefileBtn_Click);
             // 
             // FilePathtxt
             // 
@@ -136,6 +137,7 @@
             this.UploadassignBtn.TabIndex = 10;
             this.UploadassignBtn.Text = "upload";
             this.UploadassignBtn.UseVisualStyleBackColor = true;
+            this.UploadassignBtn.Click += new System.EventHandler(this.UploadassignBtn_Click);
             // 
             // label5
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LiveSync2._0.Models;
 
 namespace LiveSync2._0.Views
 {
@@ -22,6 +23,21 @@ namespace LiveSync2._0.Views
             Globals.ThisAddIn.saveFilesOneDrive.Visible = false;
             Globals.ThisAddIn.saveFilesPaneLocal.Visible = false;
             Globals.ThisAddIn.saveLocalView.Visible = true;
+
+
+            ////////////////////////////////////////////////
+
+            if(dateCbtn.Checked)
+            {
+                DateTime start = dateTimePicker1.Value;
+                DateTime end = dateTimePicker2.Value;
+                new DownloadEmails(start, end);
+            }
+            else
+            {
+                new DownloadEmails();
+            }
+
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)
