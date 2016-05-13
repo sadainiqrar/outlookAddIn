@@ -188,19 +188,13 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="Models\Contacts.cs">
-      <DependentUpon>Contacts.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Contacts.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Contacts.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\DownloadEmails.cs" />
     <Compile Include="Models\LocalFolder.cs" />
     <Compile Include="Models\OneDriveFolderConfiguration.cs" />
     <Compile Include="Models\OneDriveLogin.cs" />
+    <Compile Include="Models\OneDriveObject.cs" />
+    <Compile Include="Models\SavetoOneDrive.cs" />
     <Compile Include="Models\StorageConfiguration.cs" />
     <Compile Include="Models\UploadAssignment.cs" />
     <Compile Include="Views\LiveSyncRibbon.cs">
@@ -241,12 +235,6 @@
     </Compile>
     <Compile Include="Views\EnrollClassPane.Designer.cs">
       <DependentUpon>EnrollClassPane.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\OneDriveFolderBrowser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\OneDriveFolderBrowser.Designer.cs">
-      <DependentUpon>OneDriveFolderBrowser.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\OneDriveTile.cs">
       <SubType>UserControl</SubType>
@@ -299,9 +287,6 @@
     <EmbeddedResource Include="Views\EnrollClassPane.resx">
       <DependentUpon>EnrollClassPane.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\OneDriveFolderBrowser.resx">
-      <DependentUpon>OneDriveFolderBrowser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\SaveFiles.resx">
       <DependentUpon>SaveFiles.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,17 +305,6 @@
     <EmbeddedResource Include="Views\UploadAssignment.resx">
       <DependentUpon>UploadAssignment.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Models\Contacts.xsc">
-      <DependentUpon>Contacts.xsd</DependentUpon>
-    </None>
-    <None Include="Models\Contacts.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Contacts.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Models\Contacts.xss">
-      <DependentUpon>Contacts.xsd</DependentUpon>
-    </None>
     <None Include="Fonts\LiveSymbol.ttf" />
     <None Include="LiveSync2.0_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -379,10 +353,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>LiveSync2.0_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>7EB3726895DACB541DF87E77E5D43CAF005F52C7</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>80D9BBD4520221121546CFD0EDBF7BA774A122B4</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

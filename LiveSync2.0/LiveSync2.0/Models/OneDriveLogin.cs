@@ -21,12 +21,11 @@ namespace LiveSync2._0.Models
         private static readonly string[] Scopes = { "onedrive.readwrite", "wl.offline_access", "wl.signin" };
 
         private const int UploadChunkSize = 10 * 1024 * 1024;       // 10 MB
-        private IOneDriveClient oneDriveClient { get; set; }
+        public IOneDriveClient oneDriveClient { get; set; }
         private Item CurrentFolder { get; set; }
         private Item SelectedItem { get; set; }
 
-
-        private OneDriveTile _selectedTile;
+        
 
         bool connected = false;
 

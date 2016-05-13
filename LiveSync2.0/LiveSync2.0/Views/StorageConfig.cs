@@ -13,12 +13,10 @@ namespace LiveSync2._0.Views
 {
     public partial class StorageConfig : Form
     {
-        private OneDriveLogin login;
 
         string folderPath;
         public StorageConfig()
         {
-            login = new OneDriveLogin();
             InitializeComponent();
         }
 
@@ -47,30 +45,23 @@ namespace LiveSync2._0.Views
 
         private async void SignInBtn_Click(object sender, EventArgs e)
         {
-            if (login.UpdateConnectedState())
+            if (OneDriveObject.ONEDRIVE.UpdateConnectedState())
             {
-                await login.SignIn();
+                await OneDriveObject.ONEDRIVE.SignIn();
             }
-            SignOutbtn.Visible = true;
-            SignInBtn.Visible = false;
-            OCreateFolderBtn.Visible = true;
         }
 
         private void SignOutbtn_Click(object sender, EventArgs e)
         {
-            if (!login.UpdateConnectedState())
+            if (!OneDriveObject.ONEDRIVE.UpdateConnectedState())
             {
-                login.signout();
+                OneDriveObject.ONEDRIVE.signout();
             }
-            SignInBtn.Visible = true;
-            SignOutbtn.Visible = false;
-            OCreateFolderBtn.Visible = false;
             
         }
 
         private void OCreateFolderBtn_Click(object sender, EventArgs e)
         {
-           MessageBox.Show(login.getFolder());
         }
     }
 }

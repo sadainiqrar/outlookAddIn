@@ -31,11 +31,11 @@ namespace LiveSync2._0.Views
             {
                 DateTime start = dateTimePicker1.Value;
                 DateTime end = dateTimePicker2.Value;
-                new DownloadEmails(start, end);
+                new SavetoOneDrive().SaveEmail(start, end);
             }
             else
             {
-                new DownloadEmails();
+                new SavetoOneDrive().SaveEmail();
             }
 
         }

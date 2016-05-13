@@ -23,7 +23,7 @@ namespace LiveSync2._0.Models
             app = new Outlook.Application();
             contacts = app.Session.GetDefaultFolder(Outlook.OlDefaultFolders.olFolderContacts) as Outlook.Folder;
             module = app.ActiveExplorer().NavigationPane.Modules.GetNavigationModule(Outlook.OlNavigationModuleType.olModuleContacts) as Outlook.ContactsModule;
-            Outlook.NavigationGroup group = module.NavigationGroups.Create(groupName);
+            group = module.NavigationGroups.Create(groupName);
             group.NavigationFolders.Add(contacts.Folders.Add("Class Contacts"));
         }
 
@@ -36,7 +36,6 @@ namespace LiveSync2._0.Models
             foreach(Outlook.ContactItem item in Folder_Contacts.Items)
             {
                 contacts.Add(item);
-               
             }
             return contacts;
         }
