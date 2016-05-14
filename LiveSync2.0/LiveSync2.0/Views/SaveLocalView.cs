@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LiveSync2._0.Models;
 
 namespace LiveSync2._0.Views
 {
@@ -16,31 +17,45 @@ namespace LiveSync2._0.Views
         {
             InitializeComponent();
         }
+        private void NextsaveBtn_Click(object sender, EventArgs e)
+        {
+            Globals.ThisAddIn.saveFilesPaneLocal.Visible = false;
 
-        private void CancelsaveBtn_Click(object sender, EventArgs e)
+
+            ////////////////////////////////////////////////
+
+            if (dateCbtn.Checked)
+            {
+                DateTime start = dateTimePicker1.Value;
+                DateTime end = dateTimePicker2.Value;
+                new DownloadEmails(start, end);
+            }
+            else
+            {
+                new DownloadEmails();
+            }
+
+        }
+
+        private void CancelBtn_Click(object sender, EventArgs e)
         {
             this.Visible = false;
         }
 
-        private void defaultsaveRBTN_CheckedChanged(object sender, EventArgs e)
+        private void groupCBtn_CheckedChanged(object sender, EventArgs e)
         {
-            customPathtxt.Visible = false;
-            folderComboBox.Visible = false;
-            BrowseFolderBTn.Visible = false;
+            if (classCBOX.Visible == false)
+                classCBOX.Visible = true;
+            else
+                classCBOX.Visible = false;
         }
 
-        private void liveSyncRBTN_CheckedChanged(object sender, EventArgs e)
+        private void dateCbtn_CheckedChanged(object sender, EventArgs e)
         {
-            customPathtxt.Visible = false;
-            BrowseFolderBTn.Visible = false;
-            folderComboBox.Visible = true;
-        }
-
-        private void CustomSaveBtn_CheckedChanged(object sender, EventArgs e)
-        {
-            customPathtxt.Visible = true;
-            BrowseFolderBTn.Visible = true;
-            folderComboBox.Visible = false;
+            if (dateGBOX.Visible == false)
+                dateGBOX.Visible = true;
+            else
+                dateGBOX.Visible = false;
         }
     }
 }

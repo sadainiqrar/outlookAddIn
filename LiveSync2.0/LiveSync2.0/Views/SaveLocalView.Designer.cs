@@ -28,116 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.defaultsaveRBTN = new System.Windows.Forms.RadioButton();
-            this.liveSyncRBTN = new System.Windows.Forms.RadioButton();
-            this.folderComboBox = new System.Windows.Forms.ComboBox();
-            this.CustomSaveBtn = new System.Windows.Forms.RadioButton();
-            this.customPathtxt = new System.Windows.Forms.TextBox();
-            this.BrowseFolderBTn = new System.Windows.Forms.Button();
-            this.downloadBtn = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.NextsaveBtn = new System.Windows.Forms.Button();
+            this.classCBOX = new System.Windows.Forms.ComboBox();
+            this.dateCbtn = new System.Windows.Forms.CheckBox();
+            this.groupCBtn = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateGBOX = new System.Windows.Forms.GroupBox();
+            this.dateGBOX.SuspendLayout();
             this.SuspendLayout();
             // 
-            // defaultsaveRBTN
+            // NextsaveBtn
             // 
-            this.defaultsaveRBTN.AutoSize = true;
-            this.defaultsaveRBTN.Location = new System.Drawing.Point(12, 20);
-            this.defaultsaveRBTN.Name = "defaultsaveRBTN";
-            this.defaultsaveRBTN.Size = new System.Drawing.Size(59, 17);
-            this.defaultsaveRBTN.TabIndex = 0;
-            this.defaultsaveRBTN.TabStop = true;
-            this.defaultsaveRBTN.Text = "Default";
-            this.defaultsaveRBTN.UseVisualStyleBackColor = true;
-            this.defaultsaveRBTN.CheckedChanged += new System.EventHandler(this.defaultsaveRBTN_CheckedChanged);
+            this.NextsaveBtn.Location = new System.Drawing.Point(112, 228);
+            this.NextsaveBtn.Name = "NextsaveBtn";
+            this.NextsaveBtn.Size = new System.Drawing.Size(75, 23);
+            this.NextsaveBtn.TabIndex = 13;
+            this.NextsaveBtn.Text = "Ok";
+            this.NextsaveBtn.UseVisualStyleBackColor = true;
             // 
-            // liveSyncRBTN
+            // classCBOX
             // 
-            this.liveSyncRBTN.AutoSize = true;
-            this.liveSyncRBTN.Location = new System.Drawing.Point(12, 43);
-            this.liveSyncRBTN.Name = "liveSyncRBTN";
-            this.liveSyncRBTN.Size = new System.Drawing.Size(104, 17);
-            this.liveSyncRBTN.TabIndex = 1;
-            this.liveSyncRBTN.TabStop = true;
-            this.liveSyncRBTN.Text = "Live Sync Folder";
-            this.liveSyncRBTN.UseVisualStyleBackColor = true;
-            this.liveSyncRBTN.CheckedChanged += new System.EventHandler(this.liveSyncRBTN_CheckedChanged);
+            this.classCBOX.FormattingEnabled = true;
+            this.classCBOX.Location = new System.Drawing.Point(40, 57);
+            this.classCBOX.Name = "classCBOX";
+            this.classCBOX.Size = new System.Drawing.Size(121, 21);
+            this.classCBOX.TabIndex = 11;
+            this.classCBOX.Visible = false;
             // 
-            // folderComboBox
+            // dateCbtn
             // 
-            this.folderComboBox.FormattingEnabled = true;
-            this.folderComboBox.Location = new System.Drawing.Point(22, 67);
-            this.folderComboBox.Name = "folderComboBox";
-            this.folderComboBox.Size = new System.Drawing.Size(149, 21);
-            this.folderComboBox.TabIndex = 2;
-            this.folderComboBox.Visible = false;
+            this.dateCbtn.AutoSize = true;
+            this.dateCbtn.Location = new System.Drawing.Point(23, 88);
+            this.dateCbtn.Name = "dateCbtn";
+            this.dateCbtn.Size = new System.Drawing.Size(75, 17);
+            this.dateCbtn.TabIndex = 10;
+            this.dateCbtn.Text = "From Date";
+            this.dateCbtn.UseVisualStyleBackColor = true;
             // 
-            // CustomSaveBtn
+            // groupCBtn
             // 
-            this.CustomSaveBtn.AutoSize = true;
-            this.CustomSaveBtn.Location = new System.Drawing.Point(12, 95);
-            this.CustomSaveBtn.Name = "CustomSaveBtn";
-            this.CustomSaveBtn.Size = new System.Drawing.Size(60, 17);
-            this.CustomSaveBtn.TabIndex = 3;
-            this.CustomSaveBtn.TabStop = true;
-            this.CustomSaveBtn.Text = "Custom";
-            this.CustomSaveBtn.UseVisualStyleBackColor = true;
-            this.CustomSaveBtn.CheckedChanged += new System.EventHandler(this.CustomSaveBtn_CheckedChanged);
+            this.groupCBtn.AutoSize = true;
+            this.groupCBtn.Location = new System.Drawing.Point(23, 34);
+            this.groupCBtn.Name = "groupCBtn";
+            this.groupCBtn.Size = new System.Drawing.Size(51, 17);
+            this.groupCBtn.TabIndex = 9;
+            this.groupCBtn.Text = "Class";
+            this.groupCBtn.UseVisualStyleBackColor = true;
+            this.groupCBtn.CheckedChanged += new System.EventHandler(this.groupCBtn_CheckedChanged);
             // 
-            // customPathtxt
+            // dateTimePicker2
             // 
-            this.customPathtxt.Location = new System.Drawing.Point(22, 119);
-            this.customPathtxt.Name = "customPathtxt";
-            this.customPathtxt.Size = new System.Drawing.Size(149, 20);
-            this.customPathtxt.TabIndex = 4;
-            this.customPathtxt.Visible = false;
+            this.dateTimePicker2.Location = new System.Drawing.Point(74, 57);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker2.TabIndex = 4;
             // 
-            // BrowseFolderBTn
+            // label1
             // 
-            this.BrowseFolderBTn.Location = new System.Drawing.Point(189, 117);
-            this.BrowseFolderBTn.Name = "BrowseFolderBTn";
-            this.BrowseFolderBTn.Size = new System.Drawing.Size(57, 23);
-            this.BrowseFolderBTn.TabIndex = 5;
-            this.BrowseFolderBTn.Text = "Browse";
-            this.BrowseFolderBTn.UseVisualStyleBackColor = true;
-            this.BrowseFolderBTn.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "From";
             // 
-            // downloadBtn
+            // label2
             // 
-            this.downloadBtn.Location = new System.Drawing.Point(96, 157);
-            this.downloadBtn.Name = "downloadBtn";
-            this.downloadBtn.Size = new System.Drawing.Size(75, 23);
-            this.downloadBtn.TabIndex = 6;
-            this.downloadBtn.Text = "Save";
-            this.downloadBtn.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "To";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(74, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // dateGBOX
+            // 
+            this.dateGBOX.Controls.Add(this.dateTimePicker2);
+            this.dateGBOX.Controls.Add(this.label1);
+            this.dateGBOX.Controls.Add(this.label2);
+            this.dateGBOX.Controls.Add(this.dateTimePicker1);
+            this.dateGBOX.Location = new System.Drawing.Point(26, 111);
+            this.dateGBOX.Name = "dateGBOX";
+            this.dateGBOX.Size = new System.Drawing.Size(260, 98);
+            this.dateGBOX.TabIndex = 12;
+            this.dateGBOX.TabStop = false;
+            this.dateGBOX.Visible = false;
             // 
             // SaveLocalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.downloadBtn);
-            this.Controls.Add(this.BrowseFolderBTn);
-            this.Controls.Add(this.customPathtxt);
-            this.Controls.Add(this.CustomSaveBtn);
-            this.Controls.Add(this.folderComboBox);
-            this.Controls.Add(this.liveSyncRBTN);
-            this.Controls.Add(this.defaultsaveRBTN);
+            this.Controls.Add(this.NextsaveBtn);
+            this.Controls.Add(this.classCBOX);
+            this.Controls.Add(this.dateCbtn);
+            this.Controls.Add(this.groupCBtn);
+            this.Controls.Add(this.dateGBOX);
             this.Name = "SaveLocalView";
-            this.Size = new System.Drawing.Size(268, 192);
+            this.Size = new System.Drawing.Size(309, 285);
+            this.dateGBOX.ResumeLayout(false);
+            this.dateGBOX.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton defaultsaveRBTN;
-        private System.Windows.Forms.RadioButton liveSyncRBTN;
-        private System.Windows.Forms.ComboBox folderComboBox;
-        private System.Windows.Forms.RadioButton CustomSaveBtn;
-        private System.Windows.Forms.TextBox customPathtxt;
-        private System.Windows.Forms.Button BrowseFolderBTn;
-        private System.Windows.Forms.Button downloadBtn;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button NextsaveBtn;
+        private System.Windows.Forms.ComboBox classCBOX;
+        private System.Windows.Forms.CheckBox dateCbtn;
+        private System.Windows.Forms.CheckBox groupCBtn;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox dateGBOX;
     }
 }

@@ -122,7 +122,7 @@
             this.NextsaveBtn.Name = "NextsaveBtn";
             this.NextsaveBtn.Size = new System.Drawing.Size(75, 23);
             this.NextsaveBtn.TabIndex = 8;
-            this.NextsaveBtn.Text = "Next";
+            this.NextsaveBtn.Text = "Ok";
             this.NextsaveBtn.UseVisualStyleBackColor = true;
             this.NextsaveBtn.Click += new System.EventHandler(this.NextsaveBtn_Click);
             // 

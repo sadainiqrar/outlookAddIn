@@ -20,9 +20,7 @@ namespace LiveSync2._0.Views
 
         private void NextsaveBtn_Click(object sender, EventArgs e)
         {
-            Globals.ThisAddIn.saveFilesOneDrive.Visible = false;
             Globals.ThisAddIn.saveFilesPaneLocal.Visible = false;
-            Globals.ThisAddIn.saveLocalView.Visible = true;
 
 
             ////////////////////////////////////////////////

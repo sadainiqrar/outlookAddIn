@@ -20,7 +20,6 @@ namespace LiveSync2._0
         public CustomTaskPane saveFilesOneDrive;
         public CustomTaskPane uploadssignmentPane;
         public CustomTaskPane downloadSubmissionsPane;
-        public CustomTaskPane saveLocalView;
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
@@ -28,11 +27,10 @@ namespace LiveSync2._0
             enrollClassPane = this.CustomTaskPanes.Add(new EnrollClassPane(),"Enrollment");
             showAssignmentsPane = this.CustomTaskPanes.Add(new AssignmentCalender(), "Assignments");
             submitAssignmentPane = this.CustomTaskPanes.Add(new SubmitAssignmentPane(), "Submit Assignment");
-            saveFilesPaneLocal = this.CustomTaskPanes.Add(new SaveFiles(), "Download Local");
+            saveFilesPaneLocal = this.CustomTaskPanes.Add(new SaveLocalView(), "Download Local");
             saveFilesOneDrive = this.CustomTaskPanes.Add(new SaveFiles(), "Save To OneDrive");
             uploadssignmentPane = this.CustomTaskPanes.Add(new UploadAssignment(), "New assignment");
-            downloadSubmissionsPane = this.CustomTaskPanes.Add(new DownloadSubmission(), "Assignment Submissions");
-            saveLocalView = this.CustomTaskPanes.Add(new SaveLocalView(), "Save select");
+            downloadSubmissionsPane = this.CustomTaskPanes.Add(new DownloadSubmission(), "Assignment Submissions");                 
 
             CreateRibbonExtensibilityObject();
            

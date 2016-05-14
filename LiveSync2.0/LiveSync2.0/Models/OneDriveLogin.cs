@@ -26,8 +26,7 @@ namespace LiveSync2._0.Models
         private Item SelectedItem { get; set; }
 
         
-
-        bool connected = false;
+        
 
         public OneDriveLogin()
         {
@@ -59,9 +58,7 @@ namespace LiveSync2._0.Models
                     await this.oneDriveClient.AuthenticateAsync();
                   
                 }
-
-                //   await LoadFolderFromPath();
-                connected = true;
+                
             }
             catch (OneDriveException exception)
             {
@@ -95,8 +92,6 @@ namespace LiveSync2._0.Models
                 ((OneDriveClient)this.oneDriveClient).Dispose();
                 this.oneDriveClient = null;
             }
-
-            connected = false;
         }
 
 
