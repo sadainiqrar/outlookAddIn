@@ -3,21 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
+
 using Outlook = Microsoft.Office.Interop.Outlook;
 using Office = Microsoft.Office.Core;
-using Microsoft.Office.Tools;
 
 namespace LiveSync2._0.Models
 {
-    class SavetoOneDrive
+    class DownloadSubmissions
     {
-        OneDriveFolderConfiguration save;
-        public SavetoOneDrive()
-        {
-            save = new OneDriveFolderConfiguration();
-        }
-        public void SaveEmail()
+        public DownloadSubmissions()
         {
             Outlook.Application app = new Outlook.Application();
             Outlook.Accounts acc = app.Session.Accounts;
@@ -33,17 +27,12 @@ namespace LiveSync2._0.Models
                         newEmail = collItem as Outlook.MailItem;
                         if (newEmail != null)
                         {
-                            if (newEmail.Attachments.Count > 0 && newEmail.Subject == "Assignment")
+                            if (newEmail.Attachments.Count > 0 && newEmail.Subject == "submitted Assignment")
                             {
-                                CreateFolder(@"C:\TempFileSave");
                                 for (int i = 1; i <= newEmail.Attachments.Count; i++)
                                 {
-                                    newEmail.Attachments[i].SaveAsFile(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName);
-                                    save.SaveItem(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName, OneDriveObject.ONEDRIVE.oneDriveClient);
-
+                                    newEmail.Attachments[i].SaveAsFile(LocalFolder.FOLDER + "\\" + newEmail.Attachments[i].FileName);
                                 }
-                                DeleteFiles(@"C:\TempFileSave");
-
                             }
                         }
                     }
@@ -58,9 +47,9 @@ namespace LiveSync2._0.Models
                 }
             }
 
-
         }
-        public void SaveEmail(DateTime start, DateTime end)
+
+        public DownloadSubmissions(DateTime start, DateTime end)
         {
             Outlook.Application app = new Outlook.Application();
             Outlook.Accounts acc = app.Session.Accounts;
@@ -79,15 +68,12 @@ namespace LiveSync2._0.Models
                         {
                             if (newEmail.CreationTime >= start && newEmail.CreationTime <= end)
                             {
-                                if (newEmail.Attachments.Count > 0 && newEmail.Subject == "Assignment")
+                                if (newEmail.Attachments.Count > 0 && newEmail.Subject == "submitted Assignment")
                                 {
-                                    CreateFolder(@"C:\TempFileSave");
                                     for (int i = 1; i <= newEmail.Attachments.Count; i++)
                                     {
-                                        newEmail.Attachments[i].SaveAsFile(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName);
-                                        save.SaveItem(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName, OneDriveObject.ONEDRIVE.oneDriveClient);
+                                        newEmail.Attachments[i].SaveAsFile(LocalFolder.FOLDER + newEmail.Attachments[i].FileName);
                                     }
-                                    DeleteFiles(@"C:\TempFileSave");
                                 }
                             }
                         }
@@ -103,21 +89,9 @@ namespace LiveSync2._0.Models
                 }
             }
         }
-
-        public void CreateFolder(string path)
+        public DownloadSubmissions(DateTime start, DateTime end, String group)
         {
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-        }
 
-        public void DeleteFiles(string path)
-        {
-            Directory.Delete(path,true);
         }
     }
-
-
-  
 }

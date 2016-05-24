@@ -37,12 +37,17 @@ namespace LiveSync2._0.Views
         {
             if (defRBTN.Checked)
             {
-                new DownloadEmails();
+                new DownloadSubmissionsConfig().getData(0, DateTime.Now, DateTime.Now);
+                
             }
             if(cusRBTN.Checked)
             {
-                new DownloadEmails(dateTimePicker1.Value,dateTimePicker2.Value);
+                new DownloadSubmissionsConfig().getData(1, dateTimePicker1.Value, dateTimePicker2.Value);
+                
             }
+
+           this.Visible = false;
+           Globals.ThisAddIn.downloadSubmissionsConfig.Visible = true;
         }
     }
 }

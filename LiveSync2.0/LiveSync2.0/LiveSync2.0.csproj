@@ -190,13 +190,22 @@
   <ItemGroup>
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\DownloadEmails.cs" />
+    <Compile Include="Models\DownloadSubmissions.cs" />
+    <Compile Include="Models\DownloadSubOnedrive.cs" />
     <Compile Include="Models\LocalFolder.cs" />
     <Compile Include="Models\OneDriveFolderConfiguration.cs" />
     <Compile Include="Models\OneDriveLogin.cs" />
     <Compile Include="Models\OneDriveObject.cs" />
     <Compile Include="Models\SavetoOneDrive.cs" />
     <Compile Include="Models\StorageConfiguration.cs" />
+    <Compile Include="Models\SubmitAssingment.cs" />
     <Compile Include="Models\UploadAssignment.cs" />
+    <Compile Include="Views\DownloadSubmissionsConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DownloadSubmissionsConfig.Designer.cs">
+      <DependentUpon>DownloadSubmissionsConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LiveSyncRibbon.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -260,6 +269,9 @@
     <Compile Include="Views\UploadAssignment.Designer.cs">
       <DependentUpon>UploadAssignment.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\DownloadSubmissionsConfig.resx">
+      <DependentUpon>DownloadSubmissionsConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LiveSyncRibbon.resx">
       <DependentUpon>LiveSyncRibbon.cs</DependentUpon>
     </EmbeddedResource>

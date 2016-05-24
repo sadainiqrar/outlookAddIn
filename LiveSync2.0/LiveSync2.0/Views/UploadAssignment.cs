@@ -26,7 +26,27 @@ namespace LiveSync2._0.Views
 
         private void UploadassignBtn_Click(object sender, EventArgs e)
         {
-            new Models.UploadAssignment().uploadAssignment(assignNameTxt.Text,assignBodytxt.Text,deadlineDatePick.Value,file);
+            Boolean ok = true;
+            if(file == "")
+            {
+                MessageBox.Show("Attachment Assignment File");
+                ok = false;
+            }
+            if(assignNameTxt.Text == "")
+            {
+                MessageBox.Show("Add Assignment name");
+                ok = false;
+            }
+            if(deadlineDatePick.Value == null)
+            {
+
+                MessageBox.Show("Confirm Deadline");
+                ok = false;
+            }
+            if (ok)
+            {
+                new Models.UploadAssignment().uploadAssignment(assignNameTxt.Text, assignBodytxt.Text, deadlineDatePick.Value, file);
+            }
         }
 
         private void BrowsefileBtn_Click(object sender, EventArgs e)

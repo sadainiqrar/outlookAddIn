@@ -28,7 +28,7 @@ namespace LiveSync2._0.Models
                         newEmail = collItem as Outlook.MailItem;
                         if (newEmail != null)
                         {
-                            if (newEmail.Attachments.Count > 0)
+                            if (newEmail.Attachments.Count > 0 && newEmail.Subject == "Assignment")
                             {
                                 for (int i = 1; i <= newEmail.Attachments.Count; i++)
                                 {
@@ -69,7 +69,7 @@ namespace LiveSync2._0.Models
                         {
                             if (newEmail.CreationTime >= start && newEmail.CreationTime <= end)
                             {
-                                if (newEmail.Attachments.Count > 0)
+                                if (newEmail.Attachments.Count > 0 && newEmail.Subject == "Assignment")
                                 {
                                     for (int i = 1; i <= newEmail.Attachments.Count; i++)
                                     {

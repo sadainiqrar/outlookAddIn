@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.saveSubBTn = new System.Windows.Forms.Button();
+            this.nextsubBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -114,15 +114,15 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "To";
             // 
-            // saveSubBTn
+            // nextsubBtn
             // 
-            this.saveSubBTn.Location = new System.Drawing.Point(80, 175);
-            this.saveSubBTn.Name = "saveSubBTn";
-            this.saveSubBTn.Size = new System.Drawing.Size(75, 23);
-            this.saveSubBTn.TabIndex = 8;
-            this.saveSubBTn.Text = "Save";
-            this.saveSubBTn.UseVisualStyleBackColor = true;
-            this.saveSubBTn.Click += new System.EventHandler(this.saveSubBTn_Click);
+            this.nextsubBtn.Location = new System.Drawing.Point(80, 175);
+            this.nextsubBtn.Name = "nextsubBtn";
+            this.nextsubBtn.Size = new System.Drawing.Size(75, 23);
+            this.nextsubBtn.TabIndex = 8;
+            this.nextsubBtn.Text = "Next";
+            this.nextsubBtn.UseVisualStyleBackColor = true;
+            this.nextsubBtn.Click += new System.EventHandler(this.saveSubBTn_Click);
             // 
             // panel1
             // 
@@ -142,7 +142,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.saveSubBTn);
+            this.Controls.Add(this.nextsubBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.defRBTN);
             this.Controls.Add(this.cusRBTN);
@@ -166,7 +166,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button saveSubBTn;
+        private System.Windows.Forms.Button nextsubBtn;
         private System.Windows.Forms.Panel panel1;
     }
 }

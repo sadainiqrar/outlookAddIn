@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
+
 using Outlook = Microsoft.Office.Interop.Outlook;
 using Office = Microsoft.Office.Core;
-using Microsoft.Office.Tools;
+using System.IO;
 
 namespace LiveSync2._0.Models
 {
-    class SavetoOneDrive
+    class DownloadSubOnedrive
     {
         OneDriveFolderConfiguration save;
-        public SavetoOneDrive()
+        public DownloadSubOnedrive()
         {
             save = new OneDriveFolderConfiguration();
         }
@@ -33,7 +33,7 @@ namespace LiveSync2._0.Models
                         newEmail = collItem as Outlook.MailItem;
                         if (newEmail != null)
                         {
-                            if (newEmail.Attachments.Count > 0 && newEmail.Subject == "Assignment")
+                            if (newEmail.Attachments.Count > 0 && newEmail.Subject == "submitted Assignment")
                             {
                                 CreateFolder(@"C:\TempFileSave");
                                 for (int i = 1; i <= newEmail.Attachments.Count; i++)
@@ -79,7 +79,7 @@ namespace LiveSync2._0.Models
                         {
                             if (newEmail.CreationTime >= start && newEmail.CreationTime <= end)
                             {
-                                if (newEmail.Attachments.Count > 0 && newEmail.Subject == "Assignment")
+                                if (newEmail.Attachments.Count > 0 && newEmail.Subject == "submitted Assignment")
                                 {
                                     CreateFolder(@"C:\TempFileSave");
                                     for (int i = 1; i <= newEmail.Attachments.Count; i++)
@@ -114,10 +114,7 @@ namespace LiveSync2._0.Models
 
         public void DeleteFiles(string path)
         {
-            Directory.Delete(path,true);
+            Directory.Delete(path, true);
         }
     }
-
-
-  
 }

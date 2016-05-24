@@ -115,6 +115,7 @@
             this.UploadBtn.TabIndex = 8;
             this.UploadBtn.Text = "Upload";
             this.UploadBtn.UseVisualStyleBackColor = true;
+            this.UploadBtn.Click += new System.EventHandler(this.UploadBtn_Click);
             // 
             // submitBTn
             // 
@@ -124,6 +125,7 @@
             this.submitBTn.TabIndex = 9;
             this.submitBTn.Text = "Submit";
             this.submitBTn.UseVisualStyleBackColor = true;
+            this.submitBTn.Click += new System.EventHandler(this.submitBTn_Click);
             // 
             // openFileDialog1
             // 
