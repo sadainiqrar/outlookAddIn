@@ -20,7 +20,7 @@ namespace LiveSync2._0.Models
             {
                 Directory.CreateDirectory(path + @"\Live Sync");
             }
-            LocalFolder.FOLDER = path + @"\Live Sync\";
+            LocalFolder.FOLDER = path;
         }
     }
 }

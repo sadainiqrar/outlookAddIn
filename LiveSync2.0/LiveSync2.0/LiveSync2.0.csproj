@@ -196,6 +196,7 @@
     <Compile Include="Models\OneDriveFolderConfiguration.cs" />
     <Compile Include="Models\OneDriveLogin.cs" />
     <Compile Include="Models\OneDriveObject.cs" />
+    <Compile Include="Models\OutlookAccountInfo.cs" />
     <Compile Include="Models\SavetoOneDrive.cs" />
     <Compile Include="Models\StorageConfiguration.cs" />
     <Compile Include="Models\SubmitAssingment.cs" />
@@ -283,6 +284,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\AddStudentList.resx">
       <DependentUpon>AddStudentList.cs</DependentUpon>
