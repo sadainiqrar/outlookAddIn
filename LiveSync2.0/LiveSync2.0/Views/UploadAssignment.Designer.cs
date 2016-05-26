@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.assigngroupcombo = new System.Windows.Forms.ComboBox();
-            this.assignfilecbtn = new System.Windows.Forms.CheckBox();
             this.BrowsefileBtn = new System.Windows.Forms.Button();
             this.FilePathtxt = new System.Windows.Forms.TextBox();
             this.UploadassignBtn = new System.Windows.Forms.Button();
@@ -103,15 +102,6 @@
             this.assigngroupcombo.Size = new System.Drawing.Size(169, 21);
             this.assigngroupcombo.TabIndex = 6;
             // 
-            // assignfilecbtn
-            // 
-            this.assignfilecbtn.AutoSize = true;
-            this.assignfilecbtn.Location = new System.Drawing.Point(56, 214);
-            this.assignfilecbtn.Name = "assignfilecbtn";
-            this.assignfilecbtn.Size = new System.Drawing.Size(15, 14);
-            this.assignfilecbtn.TabIndex = 7;
-            this.assignfilecbtn.UseVisualStyleBackColor = true;
-            // 
             // BrowsefileBtn
             // 
             this.BrowsefileBtn.Location = new System.Drawing.Point(206, 208);
@@ -169,7 +159,6 @@
             this.Controls.Add(this.UploadassignBtn);
             this.Controls.Add(this.FilePathtxt);
             this.Controls.Add(this.BrowsefileBtn);
-            this.Controls.Add(this.assignfilecbtn);
             this.Controls.Add(this.assigngroupcombo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -192,7 +181,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox assigngroupcombo;
-        private System.Windows.Forms.CheckBox assignfilecbtn;
         private System.Windows.Forms.Button BrowsefileBtn;
         private System.Windows.Forms.TextBox FilePathtxt;
         private System.Windows.Forms.Button UploadassignBtn;

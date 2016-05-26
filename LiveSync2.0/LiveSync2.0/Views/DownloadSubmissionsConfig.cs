@@ -50,7 +50,7 @@ namespace LiveSync2._0.Views
                 }
             }
 
-            this.Visible = false;
+            Globals.ThisAddIn.downloadSubmissionsConfig.Visible = false;
 
         }
         public void getData(int val,DateTime start,DateTime end)

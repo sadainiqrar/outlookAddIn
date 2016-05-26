@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 using Outlook = Microsoft.Office.Interop.Outlook;
 using Office = Microsoft.Office.Core;
-using System.IO;
+using Microsoft.Office.Tools;
 
 namespace LiveSync2._0.Models
 {
@@ -33,18 +33,19 @@ namespace LiveSync2._0.Models
                         newEmail = collItem as Outlook.MailItem;
                         if (newEmail != null)
                         {
+
+                            CreateFolder(@"C:\TempFileSave");
                             if (newEmail.Attachments.Count > 0 && newEmail.Subject == "submitted Assignment")
                             {
-                                CreateFolder(@"C:\TempFileSave");
                                 for (int i = 1; i <= newEmail.Attachments.Count; i++)
                                 {
                                     newEmail.Attachments[i].SaveAsFile(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName);
                                     save.SaveItem(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName, OneDriveObject.ONEDRIVE.oneDriveClient);
 
                                 }
-                                DeleteFiles(@"C:\TempFileSave");
 
                             }
+                            
                         }
                     }
                 }
@@ -79,16 +80,18 @@ namespace LiveSync2._0.Models
                         {
                             if (newEmail.CreationTime >= start && newEmail.CreationTime <= end)
                             {
+
+                                CreateFolder(@"C:\TempFileSave");
                                 if (newEmail.Attachments.Count > 0 && newEmail.Subject == "submitted Assignment")
                                 {
-                                    CreateFolder(@"C:\TempFileSave");
                                     for (int i = 1; i <= newEmail.Attachments.Count; i++)
                                     {
                                         newEmail.Attachments[i].SaveAsFile(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName);
                                         save.SaveItem(@"C:\TempFileSave\" + newEmail.Attachments[i].FileName, OneDriveObject.ONEDRIVE.oneDriveClient);
                                     }
-                                    DeleteFiles(@"C:\TempFileSave");
                                 }
+
+                                DeleteFiles(@"C:\TempFileSave");
                             }
                         }
                     }
@@ -117,4 +120,7 @@ namespace LiveSync2._0.Models
             Directory.Delete(path, true);
         }
     }
+
+
+
 }

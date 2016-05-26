@@ -40,7 +40,7 @@ namespace LiveSync2._0.Views
             if(final)
             {
                 new SubmitAssingment().uploadAssignment(nametxt.Text + "\n" + erollmenttxt.Text, descrichtxt.Text, attachment);
-                this.Dispose();
+                Globals.ThisAddIn.submitAssignmentPane.Visible = false;
             }
         }
 

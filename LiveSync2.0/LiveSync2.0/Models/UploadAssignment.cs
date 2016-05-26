@@ -38,7 +38,7 @@ namespace LiveSync2._0.Models
                                     Outlook.OlAttachmentType.olByValue,
                                      1,
                                     attachment);
-                mail.Recipients.Add("sadain.abbasi@gmail.com");
+                mail.Recipients.Add("sadain.abbasi@outlook.com");
                 mail.Recipients.ResolveAll();
                 mail.Importance = Outlook.OlImportance.olImportanceHigh;
                 ((Outlook._MailItem)mail).Send();
@@ -49,7 +49,7 @@ namespace LiveSync2._0.Models
                                     Outlook.OlAttachmentType.olByValue,
                                      1,
                                     attachment);
-                deadline.Recipients.Add("sadain.abbasi@gmail.com");
+                deadline.Recipients.Add("sadain.abbasi@outlook.com");
                 deadline.Recipients.ResolveAll();
                 deadline.Importance = Outlook.OlImportance.olImportanceHigh;
                 deadline.StartDate = DateTime.Now;

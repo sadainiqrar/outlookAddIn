@@ -49,6 +49,7 @@
             this.NextsaveBtn.TabIndex = 13;
             this.NextsaveBtn.Text = "Ok";
             this.NextsaveBtn.UseVisualStyleBackColor = true;
+            this.NextsaveBtn.Click += new System.EventHandler(this.NextsaveBtn_Click_1);
             // 
             // classCBOX
             // 
@@ -68,6 +69,7 @@
             this.dateCbtn.TabIndex = 10;
             this.dateCbtn.Text = "From Date";
             this.dateCbtn.UseVisualStyleBackColor = true;
+            this.dateCbtn.CheckedChanged += new System.EventHandler(this.dateCbtn_CheckedChanged_1);
             // 
             // groupCBtn
             // 

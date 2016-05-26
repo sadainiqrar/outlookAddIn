@@ -45,8 +45,7 @@ namespace LiveSync2._0.Views
                 new DownloadSubmissionsConfig().getData(1, dateTimePicker1.Value, dateTimePicker2.Value);
                 
             }
-
-           this.Visible = false;
+            Globals.ThisAddIn.downloadSubmissionsPane.Visible = false;
            Globals.ThisAddIn.downloadSubmissionsConfig.Visible = true;
         }
     }

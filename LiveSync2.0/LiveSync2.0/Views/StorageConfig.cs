@@ -29,9 +29,8 @@ namespace LiveSync2._0.Views
         {
             if (folderPath == null)
             {
-                CreateFolderBtn_Click(sender, e);
+                this.Visible = false;
             }
-            new StorageConfiguration().createFolder(folderPath);
           
         }
 
@@ -40,24 +39,40 @@ namespace LiveSync2._0.Views
             if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 folderPath = folderBrowserDialog1.SelectedPath;
+
+                new StorageConfiguration().createFolder(folderPath);
             }
         }
 
         private async void SignInBtn_Click(object sender, EventArgs e)
         {
-            if (OneDriveObject.ONEDRIVE.UpdateConnectedState())
+            try
             {
-                await OneDriveObject.ONEDRIVE.SignIn();
+                    await OneDriveObject.ONEDRIVE.SignIn();
+
+                    SignInBtn.Visible = false;
+                    SignOutbtn.Visible = true;
             }
+            catch (OperationCanceledException)
+            {
+
+            }
+            catch (Exception)
+            {
+
+            }
+            
+
         }
 
         private void SignOutbtn_Click(object sender, EventArgs e)
         {
-            if (!OneDriveObject.ONEDRIVE.UpdateConnectedState())
-            {
                 OneDriveObject.ONEDRIVE.signout();
-            }
+
+                SignInBtn.Visible = true;
+                SignOutbtn.Visible = false;
             
+
         }
 
         private void OCreateFolderBtn_Click(object sender, EventArgs e)

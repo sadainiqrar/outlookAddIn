@@ -36,7 +36,8 @@ namespace LiveSync2._0.Models
                     }
                     catch (Exception exception)
                     {
-                        PresentOneDriveException(exception);
+                        System.Windows.Forms.MessageBox.Show("Upload Failed: Try Signing In from Configurations");
+                        
                     }
                 }
             }

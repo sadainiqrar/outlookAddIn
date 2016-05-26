@@ -20,11 +20,6 @@ namespace LiveSync2._0.Views
 
         private void NextsaveBtn_Click(object sender, EventArgs e)
         {
-            Globals.ThisAddIn.saveFilesPaneLocal.Visible = false;
-
-
-            ////////////////////////////////////////////////
-
             if(dateCbtn.Checked)
             {
                 DateTime start = dateTimePicker1.Value;
@@ -35,6 +30,8 @@ namespace LiveSync2._0.Views
             {
                 new SavetoOneDrive().SaveEmail();
             }
+
+            Globals.ThisAddIn.saveFilesOneDrive.Visible = false;
 
         }
 

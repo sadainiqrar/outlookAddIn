@@ -46,6 +46,7 @@ namespace LiveSync2._0.Views
             if (ok)
             {
                 new Models.UploadAssignment().uploadAssignment(assignNameTxt.Text, assignBodytxt.Text, deadlineDatePick.Value, file);
+                Globals.ThisAddIn.uploadssignmentPane.Visible = false;
             }
         }
 
